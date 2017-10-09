@@ -1,0 +1,28 @@
+@mixin transition ( $property, $duration, $style: ease-in-out ) {
+  -webkit-transition-property: $property;  
+  -webkit-transition-duration: $duration;
+  -webkit-transition-timing-function: $style;
+
+  -moz-transition-property: $property;  
+  -moz-transition-duration: $duration;
+  -moz-transition-timing-function: $style;
+
+  -ms-transition-property: $property;  
+  -ms-transition-duration: $duration;
+  -ms-transition-timing-function: $style;
+
+  -o-transition-property: $property;  
+  -o-transition-duration: $duration;
+  -o-transition-timing-function: $style;
+
+  transition-property: $property;  
+  transition-duration: $duration;
+  transition-timing-function: $style;
+
+}
+
+@mixin box-shadow( $horiz : 1px , $vert : 1px , $blur : 1px , $spread : -1px , $color : rgba(0,0,0,0.75)) {
+    -webkit-box-shadow: $horiz $vert $blur $spread $color;
+    -moz-box-shadow: $horiz $vert $blur $spread $color;
+    box-shadow: $horiz $vert $blur $spread $color;
+  }

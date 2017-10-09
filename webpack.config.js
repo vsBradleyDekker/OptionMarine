@@ -7,12 +7,12 @@ const BundleTracker = require('webpack-bundle-tracker');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-const outputDir = './public/';
+const outputDir = './public/library/';
 
 const config = {
     context: __dirname,
     entry: {
-        'main': './scripts/js/index'
+        'main': './src/js/index'
     },
 
     output: {
@@ -56,9 +56,9 @@ const config = {
         new webpack.ProvidePlugin({moment: "moment"}),
         new CleanWebpackPlugin([outputDir + 'css', outputDir + 'js', outputDir + 'fonts', outputDir + 'css/img'], {}),
         new BundleTracker({ filename: './webpack-stats.json' }),
-        new ExtractTextPlugin('./css/styles.css'),
+        new ExtractTextPlugin('../library/css/styles.css'),
         new webpack.optimize.OccurrenceOrderPlugin(),
-        new webpack.optimize.UglifyJsPlugin(),
+        //new webpack.optimize.UglifyJsPlugin(),
         new webpack.optimize.AggressiveMergingPlugin(),
         new webpack.ProvidePlugin({
             $: "jquery",

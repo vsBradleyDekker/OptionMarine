@@ -1,0 +1,16 @@
+.hero-image{
+    background-image:url('../img/yacht3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 320px;
+
+    @include breakpoint(medium) {
+      height: 640px;
+    }
+
+    @include breakpoint(large) {
+        height: 1024px;
+    }
+    
+}

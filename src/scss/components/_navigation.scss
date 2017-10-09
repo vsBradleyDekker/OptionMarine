@@ -1,0 +1,15 @@
+.header-mast_navigation{
+    ul{
+        margin-left: 0;
+
+        li{
+            list-style-type: none;
+            display: inline;
+
+            a{
+                color: $tertiary-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
