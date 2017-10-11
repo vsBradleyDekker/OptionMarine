@@ -1,6 +1,7 @@
 h1{
     color: $white;
     font-weight: 600;
+    
 }
 
 ul{
@@ -10,6 +11,18 @@ ul{
         a{
             color: $white;
             text-decoration: none;
+            a:hover{
+                opacity: 0.8;
+                color: $white;
+            }
+            &:visited{
+                opacity: 0.8;
+                color: $white;
+            }
+            &:focus{
+                opacity: 0.8;
+                color: $white;
+            }
         }
     }
 }

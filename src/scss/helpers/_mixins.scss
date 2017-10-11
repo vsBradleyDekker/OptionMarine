@@ -21,6 +21,14 @@
 
 }
 
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 @mixin box-shadow( $horiz : 1px , $vert : 1px , $blur : 1px , $spread : -1px , $color : rgba(0,0,0,0.75)) {
     -webkit-box-shadow: $horiz $vert $blur $spread $color;
     -moz-box-shadow: $horiz $vert $blur $spread $color;

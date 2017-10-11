@@ -5,37 +5,43 @@
     @include breakpoint(medium){
         text-align: left;
     }
-
     .footer__social{
 
-        .footer__social-group{
+        .footer__social-logo{
+            width: 50%;
+        }
 
-            ul{
+        ul{
+            margin-top: 20px;
 
-                li{
-                    a{
-                        display: inline;
-                    }
+            li{
+                display: inline !important;
+                padding-left: 1em;
+
+                &:first-child{
+                    padding-left: 0;
                 }
-               
+
+                .fa{
+                    font-size: 2em;
+                }
             }
         }
 
-        .footer__info{
+        .footer__social-info{
 
             span{
                 display: block;
                 color: $white;
             }
+
+            .fa{
+                font-size: 1.5em;
+                color: #027c93;
+            }
         }
 
-        .footer__newsletter{
-            
-            button{
-                background:$primary-color;
-                color: $white;
-                padding: 16px;
-            }
+        .footer__social-newsletter{
 
             input{
                 padding: 13px;
@@ -43,30 +49,29 @@
                 border: none;
                 color: $white;
                 border: 2px solid $white;
-            }
-        }
-    }
+                width: 100%;
 
-    .footer__navigation{
-
-        ul{
-            
-            span{
-                color:$white;
-                font-weight: 600;
-                padding-bottom: 1em;
-                display:block;
-                font-size: 20px;
-
-            }
-
-            li{
-                padding-top: .5em;
+                @include breakpoint(medium){
+                    width: 80%;
+                    margin: 0;
+                }
             }
 
             button{
-                background: $primary-color;
                 color: $white;
+                padding: 20px;
+                width: 100%;
+                margin-top: 1em;
+
+                @include breakpoint(medium){
+                    width: 20%;
+                    margin-top: 0;
+                    padding: 16px;
+                }
+
+                a{
+                    color: $white;
+                }
             }
         }
     }

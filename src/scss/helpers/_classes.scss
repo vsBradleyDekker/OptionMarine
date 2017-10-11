@@ -17,7 +17,13 @@
 
   
   }
-  
+  .align-items{
+    text-align: center;
+
+    @media screen and(min-width: 40em){
+      text-align: left;
+    }
+  }
   /*padding classes*/
   .pt-small {
     padding-top: 18px!important;
@@ -108,6 +114,14 @@
   .primary-border-light{
     border: .5px solid $border-primary;
     color: $border-primary;
+  }
+  .underline{
+ 
+    @media screen and (min-width: 40em) {
+        padding-bottom: 15px;
+        border-bottom: 5px solid $white;
+    }
+
   }
   
   .acf-map {

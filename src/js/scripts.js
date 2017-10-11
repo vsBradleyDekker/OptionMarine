@@ -1,1 +1,2 @@
 /*Custom Scripts*/
+$(document).foundation();

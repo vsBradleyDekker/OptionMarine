@@ -1,0 +1,88 @@
+.banner-wrapper{
+    position: relative;
+    height: 56%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint(medium){
+        margin-top: 4em;
+        width: 90%;
+    }
+
+    @include breakpoint(large){
+        margin-top: 14em;
+        height: 30%;
+        width: 55%;
+        padding: 14em;
+    }
+
+    .banner__background{
+        position: absolute;
+        background: rgba(23, 136, 151, 0.9);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        opacity: 0.8;
+    }
+
+    .banner__content{
+        position:absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 99999;
+    
+        @include breakpoint(medium){
+            margin: 30px;
+            border: 3px solid white;
+        }
+        
+        .banner__content-title{
+            margin: 0;
+
+           @include breakpoint(medium){
+            margin-bottom: 1em;
+           }
+
+        }
+
+        .banner__content-subtitle{
+            color: $white;
+            margin-bottom: 10px;
+
+            @include breakpoint(medium){
+                margin-bottom: 1em;
+                
+            }
+        }
+
+        .banner__content-button{
+            display: block;
+            width: 100%;
+            background: $white;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include breakpoint(medium){
+                display: inline-block;
+                width: 50%;
+               
+            }
+
+            @include breakpoint(medium){
+                display: inline-block;
+                width: 50%;
+                
+            }
+            
+            a{
+                color: rgba(23, 136, 151, 0.9);
+            }
+        }
+    }
+}

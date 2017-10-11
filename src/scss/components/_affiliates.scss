@@ -1,10 +1,17 @@
-.affiliates{
+.affilaites{
+text-align: center;
 
-    .affiliates__list{
-
-        .affiliates__list-sponcer{
-                  
-        }
+    @include breakpoint(medium){
+        text-align: left;
     }
 
+    img{
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        @include breakpoint(medium){
+            padding-top: 0;
+            padding-bottom: 0;
+        }            
+    }
 }

@@ -1,21 +1,21 @@
 <footer class="footer pad-top-bot">
     <div class="row">
         <div class="columns footer__social small-12 medium-6">
-            <img src="../src/img/logo.png" alt="logo"/>
-            <ul class="footer__social-group">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">GooglePlus</a></li>
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">YouTube</a></li>
+            <img class="footer__social-logo" src="../images/footer-logo.png" alt="logo"/>
+            <ul class="footer__social-icons">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
             </ul>
-            <div class="footer__info pt-small">
-                <span><i class="fa fa-phone" aria-hidden="true"></i>03 9763 3166</span>
-                <span><i class="fa fa-envelope" aria-hidden="true"></i>info@optionmarine.com.au</span>
+            <div class="footer__social-info pt-small">
+                <span><i class="fa fa-phone" aria-hidden="true"></i> 03 9763 3166</span>
+                <span><i class="fa fa-envelope" aria-hidden="true"></i> info@optionmarine.com.au</span>
             </div>
-            <div class="footer__newsletter pt-small">
-                <input placeholder="Subscribe to Newsletter"><button type="submit">Go</button>
+            <div class="footer__social-newsletter pt-small">
+                <input placeholder="Subscribe to Newsletter"><button type="submit"><a href="#">Go</a></button>
             </div>
         </div>
         <div class="columns footer__navigation pt-small small-12 medium-3">

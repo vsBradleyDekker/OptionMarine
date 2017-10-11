@@ -1,6 +1,4 @@
-
-
-$fa-font-path: '~/font-awesome/fonts';
+$fa-font-path: "~font-awesome-sass/assets/fonts/font-awesome/";
 $body-font-family: 'Ubuntu', sans-serif !default;
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
@@ -10,11 +8,11 @@ $break-medium: 768px;
 $break-large: 1200px;
 
 /*Website Colors*/
-$primary-color: #178897;
+$primary-color: #027c93;
 $secondary-color: #FFF;
 $tertiary-color: #555555;
 $sketch-grey: #f2f2f2;
-$opacity-primary-color: #178897;
+$opacity-primary-color: rgba(23, 136, 151, 0.9);
 $backline-grey: #e7e7e7;
 
 
@@ -23,7 +21,7 @@ $black: #000;
 $gray: #d6d6d6;
 
 $primary-background: #1d96b9;
-$secondary-background: #032e3a;
+$secondary-background:  #027c93;
 
 $primary-text: $black;
 $primary-heading: $black;

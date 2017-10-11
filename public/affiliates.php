@@ -1,19 +1,19 @@
-<section class="affilaites pad-top-bot">
+<section class="affilaites pt-small pb-small align-items">
     <div class="row">
-        <div class="columns small-12 medium-4">
-            <img class="affiliates__list-sponsor" src="src/img/sponcer1.png" alt="image1">
+        <div class="affiliates__sponsors columns small-12 medium-4 text-center">
+            <a href="#"><img src="../images/sponcer1.png" alt="image1"></a>
         </div>
-        <div class="columns small-12 medium-2">
-            <img class="affiliates__list-sponsor"  src="src/img/sponcer2.png" alt="image2">
+        <div class="affiliates__sponsors columns small-12 medium-2">
+            <a href="#"><img src="../images/sponcer2.png" alt="image2"></a>
         </div>
-        <div class="columns small-12 medium-2">
-            <img class="affiliates__list-sponsor"  src="src/img/sponcer3.png" alt="image3">
+        <div class="affiliates__sponsors columns small-12 medium-2">
+            <a href="#"><img src="../images/sponcer3.png" alt="image3"></a>
         </div>
-        <div class="columns small-12 medium-2">
-            <img class="affiliates_list-sponsor"  src="src/img/sponcer4.png" alt="image4">
+        <div class="affiliates__sponsors columns small-12 medium-2">
+            <a href="#"><img src="../images/sponcer4.png" alt="image4"></a>
         </div>
-        <div class="columns small-12 medium-2">
-            <img class="affiliates__list-sponsor"  src="src/img/sponcer5.png" alt="image5">
+        <div class="affiliates__sponsors columns small-12 medium-2">
+            <a href="#"><img src="../images/sponcer5.png" alt="image5"></a>
         </div>
     </div>
 </section>

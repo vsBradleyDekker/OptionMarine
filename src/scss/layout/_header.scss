@@ -1,42 +1,9 @@
 .header-mast{
 
     .header-mast__logo-holder{
-        margin-top: 1em;
 
         .header-mast__logo-holder__logo{
-            
-        }
-
+            width: 100%;
+        }   
     }
-    
-    .header-mast_navigation{
-        ul{
-            margin-top: 1em;
-            float: right;
-            
-            li{
-                padding-right: 3px;
-                
-                @include breakpoint(medium){
-                    padding-right: 18px;
-                }
-
-                a{
-                    font-weight: 600;
-                }
-            }
-            span{
-                border: 2px solid $tertiary-color;
-                color: $tertiary-color;
-                font-weight: 600;
-                padding: 5px;
-
-                @include breakpoint(medium){
-                    padding: 10px;
-                }
-            }
-        }
-     
-    }
-
 }

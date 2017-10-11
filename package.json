@@ -7,10 +7,9 @@
   },
   "devDependencies": {
     "file-loader": "^0.10.1",
-    "font-awesome": "^4.7.0",
     "img-loader": "^2.0.0",
     "url-loader": "^0.5.9",
-    "webpack": "^2.2.0",
+    "webpack": "^2.7.0",
     "webpack-bundle-tracker": "^0.2.0",
     "webpack-merge": "^2.4.0"
   },
