@@ -1,0 +1,21 @@
+.searchbar{
+    background: $opacity-primary-color;
+    color: $white;
+
+    input{
+        border: none;
+        outline-color: none;
+        background: transparent;
+        font-size: 20px;
+        color: $white;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    span{
+        float: right;
+        font-size: 20px;
+    }
+}

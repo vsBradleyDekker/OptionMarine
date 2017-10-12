@@ -1,4 +1,4 @@
-<section class="affilaites pt-small pb-small align-items">
+<section class="affilaites pt-large pb-large align-items">
     <div class="row">
         <div class="affiliates__sponsors columns small-12 medium-4 text-center">
             <a href="#"><img src="../images/sponcer1.png" alt="image1"></a>

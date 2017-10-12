@@ -1,7 +1,11 @@
 .no-padding {
     padding: 0!important;
 }
-
+.pad-ltr-small{
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
 /*Float classes*/
 
 .float-right {
@@ -54,9 +58,11 @@
   .no-pad {
     padding: 0 !important;
   }
+
   .no-margin {
     margin: 0!important;
   }
+
   .pad-top-bot{
       padding-top: 1em;
       padding-bottom: 1em;
@@ -95,7 +101,9 @@
   .gray-background {
     background: $body-background-secondary;
   }
-  
+  .white-background{
+    background: $white;
+  }
   .inline-block {
     display: inline-block;
   }

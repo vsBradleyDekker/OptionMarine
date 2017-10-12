@@ -78,8 +78,47 @@
 
     .footer__copyright{
         color: $white;
+
         @include breakpoint(medium){
             text-align: left;
         }
+    }
+}
+
+.footer-secondary{
+
+    .footer-secondary__nav  li{
+        display: inline;
+        list-style-type: none;
+        line-height: 4;
+        padding-right: 1.5em;
+
+        a{
+            color: #656565;
+         
+        }
+    }
+ 
+    .footer-secondary__social-list{
+       
+        .fa{
+            color: #0899b8;
+            padding: 0.5em;
+            font-size: 30px;
+           
+        } 
+
+        ul{
+            float: right;
+
+            li{
+                display: inline;
+            }
+        }
+    }
+
+    .footer-secondary__copyright{
+        text-align: left;
+        color: #656565;
     }
 }

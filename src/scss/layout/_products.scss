@@ -1,0 +1,30 @@
+.products-section{
+    background: #eee;
+
+    .products-section__heading{
+
+        .products-section__heading-title{
+            color: $opacity-primary-color;
+            font-weight: 600;
+        }
+    }
+
+    .products-section__listing{
+        
+        .products-section__listing__image{
+            border: none !important;
+            margin-bottom: 0;
+        }
+        
+        .products-section__listing__genre{
+            display: block;
+            background: $opacity-primary-color;
+            color: $white;
+            padding: 16px 10px;
+            
+            a{
+                color: $white;
+            }
+        }
+    }
+}

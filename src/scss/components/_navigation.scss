@@ -1,45 +1,103 @@
 /*--Header Navigation Menu--*/
 
-.header-mast_navigation{
 
-    ul{
-        margin-left: 0;
-        float: right;
+.header-mast__navigation{
+ z-index: 1;
+    nav{
+        width: 100%;
+        background: transparent;
 
-        @include breakpoint(medium){
-            margin-top: 1em;
-        }
-
-        li{
-            padding-right: 3px;
-            list-style-type: none;
+        .toggle{
+           
+            background: rgba(23, 136, 151, 1);
+            text-align: right;
+            box-sizing: border-box;
+            color: $white;
+            font-size: 30px;
             display: block;
+            float: right;
+            position: relative;
+            padding: 5px 17px;
+            border-radius: 10px;
+            bottom: 55px;
+            right: 20px;
+            cursor: pointer;
+
+            @include breakpoint(medium){
+                display: none;
+            }
+        }
+    
+        .active{
+            display: block;
+            transition: all 3s ease-out;
+
+            @include breakpoint(medium){
+                display: none;
+            }
+        }
+    
+        ul{
+          
+            width: 100%;
+            display: none;
+            margin-top: 15px;
+            padding: 0;
+            float: right;
+            background: rgba(23, 136, 151, 1);
             
             @include breakpoint(medium){
-                padding-right: 10px;
-                display: inline;
+                width: 80%;
+                display: block;
+                background: transparent;
             }
-            @include breakpoint(large){
-                padding-right: 18px;
-                display: inline;
+    
+            li{
+                list-style-type: none;
+                display: block;
+                padding-right: 30px;
+                text-align: left;
+                padding-top: 1em;
+                padding-bottom: 1em;
+                border-bottom: 1px solid $white;
+
+                @include breakpoint(medium){
+                    display: inline-block;
+                    border-bottom: none;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    
+                }
+               
+                &:hover{
+                    opacity: 0.8;
+                }
+              
+                a{  
+                    color: $white;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: 600;
+
+                    @include breakpoint(medium){
+                        color: $tertiary-color;
+                    } 
+                }
             }
 
-            a{
+            span{
+                border: 2px solid $white;
+                color: $white;
                 font-weight: 600;
-                color: $tertiary-color;
-                text-decoration: none;
-            }
-        }
+                padding: 5px;
+                display: none;
 
-        span{
-            border: 2px solid $tertiary-color;
-            color: $tertiary-color;
-            font-weight: 600;
-            padding: 5px;
-
-            @include breakpoint(medium){
-                padding: 10px;
-                border: 4px solid $tertiary-color;
+                @include breakpoint(medium){
+                    padding: 10px;
+                    color: $tertiary-color;
+                    border: 4px solid $tertiary-color;
+                    display: inline-block;
+                }
             }
         }
     }

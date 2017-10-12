@@ -3,6 +3,11 @@
 .no-padding {
   padding: 0 !important; }
 
+.pad-ltr-small {
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em; }
+
 /*Float classes*/
 .float-right {
   float: right; }
@@ -73,6 +78,9 @@
 
 .gray-background {
   background: #e1e1e1; }
+
+.white-background {
+  background: #ffffff; }
 
 .inline-block {
   display: inline-block; }
@@ -8141,14 +8149,89 @@ ul {
       .footer .footer__copyright {
         text-align: left; } }
 
-.header-mast .header-mast__logo-holder .header-mast__logo-holder__logo {
-  width: 100%; }
+.footer-secondary .footer-secondary__nav li {
+  display: inline;
+  list-style-type: none;
+  line-height: 4;
+  padding-right: 1.5em; }
+  .footer-secondary .footer-secondary__nav li a {
+    color: #656565; }
+
+.footer-secondary .footer-secondary__social-list .fa {
+  color: #0899b8;
+  padding: 0.5em;
+  font-size: 30px; }
+
+.footer-secondary .footer-secondary__social-list ul {
+  float: right; }
+  .footer-secondary .footer-secondary__social-list ul li {
+    display: inline; }
+
+.footer-secondary .footer-secondary__copyright {
+  text-align: left;
+  color: #656565; }
+
+.products-section {
+  background: #eee; }
+  .products-section .products-section__heading .products-section__heading-title {
+    color: rgba(23, 136, 151, 0.9);
+    font-weight: 600; }
+  .products-section .products-section__listing .products-section__listing__image {
+    border: none !important;
+    margin-bottom: 0; }
+  .products-section .products-section__listing .products-section__listing__genre {
+    display: block;
+    background: rgba(23, 136, 151, 0.9);
+    color: #ffffff;
+    padding: 16px 10px; }
+    .products-section .products-section__listing .products-section__listing__genre a {
+      color: #ffffff; }
+
+.contact-info {
+  background: #eee; }
+  .contact-info .contact-info__title h2 {
+    color: #1779ba;
+    font-weight: 600; }
+  .contact-info .contact-info__subtitle p {
+    color: #000; }
+  .contact-info .contact-info__list ul li {
+    margin-bottom: 1em; }
+    .contact-info .contact-info__list ul li a {
+      color: #000; }
+    .contact-info .contact-info__list ul li .fa {
+      color: #1779ba; }
+  .contact-info .contact-info__caption .contact-info__caption-title {
+    color: #1779ba; }
+  .contact-info .contact-info__social-list ul li {
+    display: inline;
+    padding-right: 0.5em; }
+    .contact-info .contact-info__social-list ul li a {
+      font-size: 30px; }
+    .contact-info .contact-info__social-list ul li .fa {
+      color: #0899b8; }
+
+.header-mast {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  @media print, screen and (min-width: 40em) {
+    .header-mast {
+      padding-top: 0;
+      padding-bottom: 0; } }
+  .header-mast .header-mast__logo-holder .header-mast__logo-holder__logo {
+    width: 55%; }
+    @media print, screen and (min-width: 40em) {
+      .header-mast .header-mast__logo-holder .header-mast__logo-holder__logo {
+        width: 100%; } }
+
+.header-secondary .header-secondary__logo {
+  width: 55%; }
 
 button {
   background: #027c93; }
 
 .affilaites {
-  text-align: center; }
+  text-align: center;
+  z-index: 300; }
   @media print, screen and (min-width: 40em) {
     .affilaites {
       text-align: left; } }
@@ -8162,16 +8245,17 @@ button {
 
 .banner-wrapper {
   position: relative;
-  height: 56%;
+  height: 80%;
   margin-left: auto;
   margin-right: auto; }
   @media print, screen and (min-width: 40em) {
     .banner-wrapper {
       margin-top: 4em;
-      width: 90%; } }
+      width: 90%;
+      height: 68%; } }
   @media print, screen and (min-width: 64em) {
     .banner-wrapper {
-      margin-top: 14em;
+      margin-top: 10em;
       height: 30%;
       width: 55%;
       padding: 14em; } }
@@ -8196,13 +8280,14 @@ button {
         margin: 30px;
         border: 3px solid white; } }
     .banner-wrapper .banner__content .banner__content-title {
-      margin: 0; }
+      padding-top: 1em;
+      margin-bottom: 1em; }
       @media print, screen and (min-width: 40em) {
         .banner-wrapper .banner__content .banner__content-title {
           margin-bottom: 1em; } }
     .banner-wrapper .banner__content .banner__content-subtitle {
       color: #ffffff;
-      margin-bottom: 10px; }
+      margin-bottom: 2em; }
       @media print, screen and (min-width: 40em) {
         .banner-wrapper .banner__content .banner__content-subtitle {
           margin-bottom: 1em; } }
@@ -8225,6 +8310,11 @@ button {
       .banner-wrapper .banner__content .banner__content-button a {
         color: rgba(23, 136, 151, 0.9); }
 
+#map {
+  width: 100%;
+  height: 200px;
+  background-color: grey; }
+
 .hero-image {
   background-image: url(../css/img/yacht3.jpg);
   background-position: center;
@@ -8238,38 +8328,98 @@ button {
     .hero-image {
       height: 1024px; } }
 
+.searchbar {
+  background: rgba(23, 136, 151, 0.9);
+  color: #ffffff; }
+  .searchbar input {
+    border: none;
+    outline-color: none;
+    background: transparent;
+    font-size: 20px;
+    color: #ffffff; }
+    .searchbar input:focus {
+      outline: none; }
+  .searchbar span {
+    float: right;
+    font-size: 20px; }
+
 /*--Header Navigation Menu--*/
-.header-mast_navigation ul {
-  margin-left: 0;
-  float: right; }
-  @media print, screen and (min-width: 40em) {
-    .header-mast_navigation ul {
-      margin-top: 1em; } }
-  .header-mast_navigation ul li {
-    padding-right: 3px;
-    list-style-type: none;
-    display: block; }
-    @media print, screen and (min-width: 40em) {
-      .header-mast_navigation ul li {
-        padding-right: 10px;
-        display: inline; } }
-    @media print, screen and (min-width: 64em) {
-      .header-mast_navigation ul li {
-        padding-right: 18px;
-        display: inline; } }
-    .header-mast_navigation ul li a {
-      font-weight: 600;
-      color: #555555;
-      text-decoration: none; }
-  .header-mast_navigation ul span {
-    border: 2px solid #555555;
-    color: #555555;
-    font-weight: 600;
-    padding: 5px; }
-    @media print, screen and (min-width: 40em) {
-      .header-mast_navigation ul span {
-        padding: 10px;
-        border: 4px solid #555555; } }
+.header-mast__navigation {
+  z-index: 1; }
+  .header-mast__navigation nav {
+    width: 100%;
+    background: transparent; }
+    .header-mast__navigation nav .toggle {
+      background: #178897;
+      text-align: right;
+      box-sizing: border-box;
+      color: #ffffff;
+      font-size: 30px;
+      display: block;
+      float: right;
+      position: relative;
+      padding: 5px 17px;
+      border-radius: 10px;
+      bottom: 55px;
+      right: 20px;
+      cursor: pointer; }
+      @media print, screen and (min-width: 40em) {
+        .header-mast__navigation nav .toggle {
+          display: none; } }
+    .header-mast__navigation nav .active {
+      display: block;
+      transition: all 3s ease-out; }
+      @media print, screen and (min-width: 40em) {
+        .header-mast__navigation nav .active {
+          display: none; } }
+    .header-mast__navigation nav ul {
+      width: 100%;
+      display: none;
+      margin-top: 15px;
+      padding: 0;
+      float: right;
+      background: #178897; }
+      @media print, screen and (min-width: 40em) {
+        .header-mast__navigation nav ul {
+          width: 80%;
+          display: block;
+          background: transparent; } }
+      .header-mast__navigation nav ul li {
+        list-style-type: none;
+        display: block;
+        padding-right: 30px;
+        text-align: left;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #ffffff; }
+        @media print, screen and (min-width: 40em) {
+          .header-mast__navigation nav ul li {
+            display: inline-block;
+            border-bottom: none;
+            padding-top: 0;
+            padding-bottom: 0; } }
+        .header-mast__navigation nav ul li:hover {
+          opacity: 0.8; }
+        .header-mast__navigation nav ul li a {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: 600; }
+          @media print, screen and (min-width: 40em) {
+            .header-mast__navigation nav ul li a {
+              color: #555555; } }
+      .header-mast__navigation nav ul span {
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 5px;
+        display: none; }
+        @media print, screen and (min-width: 40em) {
+          .header-mast__navigation nav ul span {
+            padding: 10px;
+            color: #555555;
+            border: 4px solid #555555;
+            display: inline-block; } }
 
 /*footer Navigation Menu*/
 .footer__navigation ul span {

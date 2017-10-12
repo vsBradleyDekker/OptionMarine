@@ -1,9 +1,27 @@
 .header-mast{
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    @include breakpoint(medium){
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
     .header-mast__logo-holder{
 
         .header-mast__logo-holder__logo{
-            width: 100%;
+            width: 55%;
+
+            @include breakpoint(medium){
+               width: 100%;
+            }
         }   
+    }
+}
+
+.header-secondary{
+    
+    .header-secondary__logo{
+        width: 55%;
     }
 }

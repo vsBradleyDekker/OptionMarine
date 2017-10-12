@@ -1,16 +1,17 @@
 .banner-wrapper{
     position: relative;
-    height: 56%;
+    height: 80%;
     margin-left: auto;
     margin-right: auto;
 
     @include breakpoint(medium){
         margin-top: 4em;
         width: 90%;
+        height: 68%;
     }
 
     @include breakpoint(large){
-        margin-top: 14em;
+        margin-top: 10em;
         height: 30%;
         width: 55%;
         padding: 14em;
@@ -41,7 +42,8 @@
         }
         
         .banner__content-title{
-            margin: 0;
+            padding-top: 1em;
+            margin-bottom: 1em;
 
            @include breakpoint(medium){
             margin-bottom: 1em;
@@ -51,7 +53,7 @@
 
         .banner__content-subtitle{
             color: $white;
-            margin-bottom: 10px;
+            margin-bottom: 2em;
 
             @include breakpoint(medium){
                 margin-bottom: 1em;

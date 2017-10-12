@@ -1,0 +1,59 @@
+.contact-info{
+    background: #eee;
+
+    .contact-info__title{
+      
+
+        h2{
+            color: $primary-color;
+            font-weight: 600;
+        }
+    }
+
+    .contact-info__subtitle{
+       
+
+        p{
+            color: $black;
+        }
+    }
+
+    .contact-info__list{
+       
+
+        ul{
+            li{
+                margin-bottom: 1em;
+                a{
+                    color: $black;
+                }
+                .fa{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    
+    .contact-info__caption{
+       
+        .contact-info__caption-title{
+            color: $primary-color;
+        }
+    }
+    
+    .contact-info__social-list{
+    
+        ul{
+            li{
+                display: inline;
+                padding-right: 0.5em;
+                a{
+                    font-size: 30px;
+                }
+                .fa{
+                    color: #0899b8;
+                }
+            }
+        }
+    }
+}

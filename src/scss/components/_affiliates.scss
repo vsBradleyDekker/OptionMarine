@@ -1,6 +1,6 @@
 .affilaites{
 text-align: center;
-
+z-index: 300;
     @include breakpoint(medium){
         text-align: left;
     }
