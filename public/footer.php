@@ -3,18 +3,18 @@
         <div class="columns footer__social small-12 medium-6">
             <img class="footer__social-logo" src="../images/footer-logo.png" alt="logo"/>
             <ul class="footer__social-icons">
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/optionmarine/"  target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"  target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"  target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"  target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="#"  target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"  target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
             </ul>
             <div class="footer__social-info pt-small">
                 <span><i class="fa fa-phone" aria-hidden="true"></i> 03 9763 3166</span>
-                <span><i class="fa fa-envelope" aria-hidden="true"></i> info@optionmarine.com.au</span>
+                <span><a href="mailto:info@optionmarine.com.au?Subject=""" target="_top"><i class="fa fa-envelope" aria-hidden="true"></i> info@optionmarine.com.au</span></a>
             </div>
-            <div class="footer__social-newsletter pt-small">
+            <div class="footer__social-newsletter pt-large">
                 <input placeholder="Subscribe to Newsletter"><button type="submit"><a href="#">Go</a></button>
             </div>
         </div>
@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="footer__copyright pt-small text-center columns small-12 medium-12">
+        <div class="footer__copyright pt-large text-center columns small-12 medium-12">
             &copy;Copyright 2017 Option Marine
         </div>
     </div>

@@ -1,19 +1,19 @@
 <section class="affilaites pt-large pb-large align-items">
     <div class="row">
         <div class="affiliates__sponsors columns small-12 medium-4 text-center">
-            <a href="#"><img src="../images/sponcer1.png" alt="image1"></a>
+            <a href="http://www.weathermax.com/" target="_blank"><img src="../images/sponcer1.png" alt="WeatherMax"></a>
         </div>
         <div class="affiliates__sponsors columns small-12 medium-2">
-            <a href="#"><img src="../images/sponcer2.png" alt="image2"></a>
+            <a href="https://www.sattler-global.com" target="_blank"><img src="../images/sponcer2.png" alt="Sattler"></a>
         </div>
         <div class="affiliates__sponsors columns small-12 medium-2">
-            <a href="#"><img src="../images/sponcer3.png" alt="image3"></a>
+            <a href="https://www.lenzip.com" target="_blank"><img src="../images/sponcer3.png" alt="Lenzip"></a>
         </div>
         <div class="affiliates__sponsors columns small-12 medium-2">
-            <a href="#"><img src="../images/sponcer4.png" alt="image4"></a>
+            <a href="http://www.strataglass.com" target="_blank"><img src="../images/sponcer4.png" alt="StrataGlass"></a>
         </div>
         <div class="affiliates__sponsors columns small-12 medium-2">
-            <a href="#"><img src="../images/sponcer5.png" alt="image5"></a>
+            <a href="https://www.sunbrella.com/" target="_blank"><img src="../images/sponcer5.png" alt="Sunbrella"></a>
         </div>
     </div>
 </section>

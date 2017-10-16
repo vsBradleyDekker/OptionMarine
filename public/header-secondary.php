@@ -12,7 +12,7 @@
         <div class="row">
             <div class="columns small-12 medium-4">
                 <div class="header-mast__logo-holder">
-                    <img class="header-secondary__logo header-mast__logo-holder__logo"src="../images/logo.png" alt="logo"/>
+                    <a href="/index.php"><img class="header-secondary__logo header-mast__logo-holder__logo"src="../images/logo.png" alt="logo"/></a>
                 </div>
             </div>
             <div class="header-mast__navigation columns small-12 medium-8">

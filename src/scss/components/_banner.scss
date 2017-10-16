@@ -5,15 +5,14 @@
     margin-right: auto;
 
     @include breakpoint(medium){
-        margin-top: 4em;
-        width: 90%;
+        width: 86%;
         height: 68%;
     }
 
     @include breakpoint(large){
         margin-top: 10em;
-        height: 30%;
-        width: 55%;
+        height: 55%;
+        width: 35%;
         padding: 14em;
     }
 
@@ -44,11 +43,16 @@
         .banner__content-title{
             padding-top: 1em;
             margin-bottom: 1em;
-
+           
            @include breakpoint(medium){
-            margin-bottom: 1em;
+            margin-bottom: 0.5em;
+            padding-top: 0.5em;
+            font-size: 56px;
            }
-
+           @include breakpoint(large){
+               padding-top: 1em;
+               margin-bottom: 1em;
+           }
         }
 
         .banner__content-subtitle{
@@ -57,6 +61,7 @@
 
             @include breakpoint(medium){
                 margin-bottom: 1em;
+                font-size: 28px;
                 
             }
         }
@@ -73,6 +78,7 @@
             @include breakpoint(medium){
                 display: inline-block;
                 width: 50%;
+                font-size: 20px;
                
             }
 

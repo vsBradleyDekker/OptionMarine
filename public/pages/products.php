@@ -22,7 +22,7 @@
         </div>
         <div class="products-section__listing columns small-12 medium-3 text-center pb-small">
             <img class="thumbnail products-section__listing__image" src="../images/indoor-dinning.jpg" alt="indoor-dinning">
-            <span class="products-section__listing__genre"><a href="#">Zippers</a></span>
+            <span class="products-section__listing__genre"><a href="../pages/product-category.php">Zippers</a></span>
         </div>
     </div>
     <div class="row pt-medium pb-medium">

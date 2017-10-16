@@ -4,8 +4,9 @@
     .products-section__heading{
 
         .products-section__heading-title{
-            color: $opacity-primary-color;
+            color: $main-color;
             font-weight: 600;
+            font-size: 38px;
         }
     }
 
@@ -18,12 +19,14 @@
         
         .products-section__listing__genre{
             display: block;
-            background: $opacity-primary-color;
+            background: $main-color;
             color: $white;
             padding: 16px 10px;
+            font-size: 18px;
             
             a{
                 color: $white;
+                font-size: 18px;
             }
         }
     }

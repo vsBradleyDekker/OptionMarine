@@ -1,3 +1,6 @@
+
+/*Drop down menu Mixin*/ 
+
 @mixin transition ( $property, $duration, $style: ease-in-out ) {
   -webkit-transition-property: $property;  
   -webkit-transition-duration: $duration;
@@ -21,6 +24,34 @@
 
 }
 
+/*Mixin for Form Input-placeholders*/ 
+
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+/*Verticle-align  Mixin*/ 
+
 @mixin vertical-align($position: relative) {
   position: $position;
   top: 50%;
@@ -28,6 +59,8 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+/*Box-shadow Mixing*/ 
 
 @mixin box-shadow( $horiz : 1px , $vert : 1px , $blur : 1px , $spread : -1px , $color : rgba(0,0,0,0.75)) {
     -webkit-box-shadow: $horiz $vert $blur $spread $color;

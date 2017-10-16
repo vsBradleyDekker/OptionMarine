@@ -10,6 +10,7 @@
     .header-mast__logo-holder{
 
         .header-mast__logo-holder__logo{
+            padding-bottom: 1em;
             width: 55%;
 
             @include breakpoint(medium){
@@ -23,5 +24,6 @@
     
     .header-secondary__logo{
         width: 55%;
+        padding-bottom: 1em;
     }
 }
