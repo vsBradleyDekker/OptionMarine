@@ -110,6 +110,11 @@
     padding-bottom: 15px;
     border-bottom: 5px solid #ffffff; } }
 
+/*Turns of default styling for .thumbnail*/
+.listing__image {
+  border: none !important;
+  margin-bottom: 0 !important; }
+
 .acf-map {
   width: 100%;
   height: 400px;
@@ -8060,6 +8065,21 @@ h1 {
   color: #ffffff;
   font-weight: 600; }
 
+h2 {
+  color: #555555;
+  font-weight: 600; }
+
+h3 {
+  color: #027d8b;
+  font-size: 22px;
+  margin-bottom: 1em;
+  font-weight: 600; }
+
+p {
+  color: #555555;
+  font-size: 16px;
+  margin-bottom: 30px; }
+
 ul {
   margin-left: 0; }
   ul li {
@@ -8095,6 +8115,21 @@ body {
 h1 {
   color: #ffffff;
   font-weight: 600; }
+
+h2 {
+  color: #555555;
+  font-weight: 600; }
+
+h3 {
+  color: #027d8b;
+  font-size: 22px;
+  margin-bottom: 1em;
+  font-weight: 600; }
+
+p {
+  color: #555555;
+  font-size: 16px;
+  margin-bottom: 30px; }
 
 ul {
   margin-left: 0; }
@@ -8173,19 +8208,8 @@ a[href^="https://www.google.com/maps"] {
       .footer .footer__social .footer__social-newsletter input {
         width: 80%;
         margin: 0; } }
-  .footer .footer__social .footer__social-newsletter button {
-    color: #ffffff;
-    padding: 20px;
-    width: 100%;
-    margin-top: 1em;
-    font-size: 15px; }
-    @media print, screen and (min-width: 40em) {
-      .footer .footer__social .footer__social-newsletter button {
-        width: 20%;
-        margin-top: 0;
-        padding: 16px; } }
-    .footer .footer__social .footer__social-newsletter button a {
-      color: #ffffff; }
+  .footer .footer__social .footer__social-newsletter a {
+    color: #ffffff; }
   .footer .footer__navigation ul span {
     font-size: 18px; }
   .footer .footer__navigation ul li a {
@@ -8227,7 +8251,9 @@ a[href^="https://www.google.com/maps"] {
       font-size: 30px; }
       @media print, screen and (min-width: 40em) {
         .footer-secondary .footer-secondary__social-list .fa {
-          padding: 0.7em; } }
+          padding-top: 16px;
+          padding-left: 16px;
+          padding-right: 0; } }
     .footer-secondary .footer-secondary__social-list ul {
       float: right; }
       .footer-secondary .footer-secondary__social-list ul li {
@@ -8243,9 +8269,39 @@ a[href^="https://www.google.com/maps"] {
     color: #027d8b;
     font-weight: 600;
     font-size: 38px; }
-  .products-section .products-section__listing .products-section__listing__image {
-    border: none !important;
-    margin-bottom: 0; }
+  .products-section .products-section__listing .wrapper {
+    position: relative; }
+    .products-section .products-section__listing .wrapper .hover {
+      display: none;
+      background: #027d8b;
+      height: 100%;
+      z-index: 9999999999999;
+      opacity: 0.9;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0; }
+      .products-section .products-section__listing .wrapper .hover .border {
+        margin: 18px;
+        border: 2px solid #fff; }
+      .products-section .products-section__listing .wrapper .hover span {
+        font-weight: bold;
+        font-size: 18px;
+        color: #ffffff; }
+      .products-section .products-section__listing .wrapper .hover a {
+        display: inline-block;
+        padding: 10px 55px;
+        background: #027d8b;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        cursor: pointer; }
+    .products-section .products-section__listing .wrapper:hover .hover {
+      display: block; }
+  .products-section .products-section__listing img.listing__image {
+    z-index: 300;
+    max-width: 100%;
+    width: 100%; }
   .products-section .products-section__listing .products-section__listing__genre {
     display: block;
     background: #027d8b;
@@ -8281,7 +8337,17 @@ a[href^="https://www.google.com/maps"] {
           color: #828282; }
         .contact-info .contact-info__list ul li .fa {
           color: #027c93;
-          font-size: 30px; }
+          font-size: 30px;
+          position: relative; }
+        .contact-info .contact-info__list ul li .fa-envelope {
+          top: 5px;
+          right: 15px; }
+        .contact-info .contact-info__list ul li .fa-phone {
+          top: 0;
+          right: 15px; }
+        .contact-info .contact-info__list ul li .fa-map-marker {
+          top: 0;
+          right: 15px; }
   .contact-info .contact-info__caption {
     padding-left: 2em;
     padding-right: 2em;
@@ -8381,27 +8447,60 @@ a[href^="https://www.google.com/maps"] {
   width: 55%;
   padding-bottom: 1em; }
 
-.product-infomation {
+.header-secondary .nav .menu-item-has-children {
+  position: relative; }
+  .header-secondary .nav .menu-item-has-children .sub-menu {
+    background-color: #027d8b;
+    display: none;
+    position: absolute;
+    margin: 0;
+    width: auto; }
+    .header-secondary .nav .menu-item-has-children .sub-menu a {
+      white-space: nowrap; }
+  .header-secondary .nav .menu-item-has-children:hover > .sub-menu {
+    display: block; }
+
+.header-secondary .nav > .menu-item-has-children > .sub-menu {
+  top: 100%; }
+  .header-secondary .nav > .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu {
+    left: 100%;
+    top: 0; }
+
+.product-information {
   background: #f2f2f2; }
-  .product-infomation .product-information__trail {
+  .product-information .product-information__trail {
     color: #828282; }
+  .product-information .product-information__title {
+    margin-bottom: 1em;
+    font-size: 22px; }
+  .product-information .product-information__downloads .product-information__downloads__link {
+    border-bottom: 1px solid #555555;
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px; }
+    .product-information .product-information__downloads .product-information__downloads__link:nth-child(even) {
+      border-top: 1px solid #555555; }
+    .product-information .product-information__downloads .product-information__downloads__link a {
+      color: #555555; }
+  .product-information .product-information__technical-spec {
+    background: #027d8b; }
+    .product-information .product-information__technical-spec .product-information__technical-spec__title {
+      color: #ffffff; }
+    .product-information .product-information__technical-spec p {
+      color: #ffffff;
+      border-top: 1px solid #ffffff;
+      margin-bottom: 0; }
 
 .product_category {
   background: #f2f2f2; }
   .product_category .product_category-trail {
     color: #828282; }
   .product_category .product-category__title {
-    font-size: 22px;
-    color: #555555;
-    font-weight: 600;
     padding-top: 1em;
     margin-bottom: 1em; }
   .product_category .product-category__description {
     color: #828282; }
   .product_category .product-category__uses {
-    color: #027d8b;
-    font-size: 22px;
-    font-weight: 600;
     padding-top: 1em;
     margin-bottom: 1em; }
   .product_category .product-category__list {
@@ -8415,16 +8514,46 @@ a[href^="https://www.google.com/maps"] {
       color: #ffffff; }
     .product_category .product-category__list .product-list__name {
       color: #ffffff;
+      font-size: 18px;
+      display: block;
       padding-top: 0.5em;
       padding-bottom: 0.5em;
-      font-size: 18px;
-      display: block; }
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff; }
     .product_category .product-category__list a {
       color: #ffffff;
-      display: block; }
+      display: block;
+      border-top: 1px solid #ffffff;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em; }
 
-button {
-  background: #027c93; }
+.button {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #ffffff;
+  border: 3px solid #027d8b;
+  color: #027d8b;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer; }
+  .button:hover {
+    background: #027d8b !important;
+    color: #ffffff !important; }
+
+.button-sm {
+  color: #ffffff;
+  padding: 20px;
+  width: 100%;
+  margin-top: 1em;
+  font-size: 15px;
+  background: #027d8b;
+  cursor: pointer; }
+  @media print, screen and (min-width: 40em) {
+    .button-sm {
+      width: 20%;
+      margin-top: 0;
+      padding: 16px; } }
 
 .affilaites {
   text-align: center;
@@ -8540,7 +8669,8 @@ button {
     outline-color: none;
     background: transparent;
     font-size: 23px;
-    color: #ffffff; }
+    color: #ffffff;
+    width: 100%; }
     .searchbar input::-webkit-input-placeholder {
       color: #b4d8dc;
       font-size: 23px; }
@@ -8576,7 +8706,8 @@ button {
     background: transparent;
     font-size: 23px;
     font-weight: 600;
-    color: #027d8b; }
+    color: #027d8b;
+    width: 100%; }
     .searchbar-secondary .searchbar-secondary__search input::-webkit-input-placeholder {
       color: #027d8b;
       font-size: 23px; }
@@ -8601,6 +8732,12 @@ button {
         position: relative;
         bottom: 5px;
         left: 5px; } }
+
+.mega-menu {
+  background: #0a9ec2;
+  display: none; }
+  .mega-menu h4 {
+    color: #ffffff; }
 
 /*--Header Navigation Menu--*/
 .header-mast__navigation {

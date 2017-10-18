@@ -1,6 +1,6 @@
 <footer class="white-background">
     <div class="footer-secondary">
-        <div class="row">
+        <div class="row align-middle">
             <div class="columns small-12 medium-6">
                 <nav class="footer-secondary__nav">
                     <li><a href="#">Subscribe</a></li>
@@ -20,7 +20,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row">
+        <div class="row align-middle">
                 <div class="footer-secondary__copyright text-center columns small-12 medium-12">
                     &copy;Copyright 2017 Option Marine
                 </div>

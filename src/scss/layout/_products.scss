@@ -1,30 +1,68 @@
-.products-section{
+.products-section {
     background: #eee;
-
-    .products-section__heading{
-
-        .products-section__heading-title{
+    .products-section__heading {
+        .products-section__heading-title {
             color: $main-color;
             font-weight: 600;
             font-size: 38px;
         }
     }
+    .products-section__listing {
+        
+        .wrapper {
+            position: relative;
 
-    .products-section__listing{
-        
-        .products-section__listing__image{
-            border: none !important;
-            margin-bottom: 0;
+            .hover {
+                display: none;
+                background: $main-color;
+                height: 100%;
+                z-index: 9999999999999;
+                opacity: 0.9;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+
+                .border {
+                    margin: 18px;
+                    border: 2px solid $border-secondary;
+                }
+
+                span {
+                    font-weight: bold;
+                    font-size: 18px;
+                    color: $white;
+                }
+
+                a {
+                    display: inline-block;
+                    padding: 10px 55px;
+                    background: $main-color;
+                    color: $white;
+                    border: 2px solid $white;
+                    cursor: pointer;
+                }
+            }
+
+            &:hover {
+                .hover {
+                    display: block;
+                }
+            }
         }
-        
-        .products-section__listing__genre{
+        img.listing__image {
+            z-index: 300;
+            max-width: 100%;
+            width: 100%;
+        }
+        .products-section__listing__genre {
             display: block;
             background: $main-color;
             color: $white;
             padding: 16px 10px;
             font-size: 18px;
-            
-            a{
+            a {
                 color: $white;
                 font-size: 18px;
             }

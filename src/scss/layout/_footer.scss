@@ -1,174 +1,131 @@
-.footer{
+.footer {
     background: $tertiary-color;
     text-align: center;
-    
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
         text-align: left;
     }
-    .footer__social{
-        
-        .footer__social-logo{
+    .footer__social {
+        .footer__social-logo {
             width: 50%;
         }
-
-        ul{
+        ul {
             margin-top: 20px;
-
-            li{
+            li {
                 display: inline !important;
                 padding-left: 1em;
-
-                &:first-child{
+                &:first-child {
                     padding-left: 0;
                 }
-                .fa{
+                .fa {
                     font-size: 29px;
                 }
             }
         }
-
-        .footer__social-info{
-
-            span{
+        .footer__social-info {
+            span {
                 display: block;
                 color: $white;
                 font-size: 15px;
-                
-                a{
-                color: $white;
-                    a:hover{
+                a {
+                    color: $white;
+                    a:hover {
                         color: $white;
                         opacity: 0.8;
                     }
                 }
             }
-
-            .fa{
+            .fa {
                 font-size: 29px;
                 color: #027c93;
             }
         }
-       
-        .footer__social-newsletter{
-
-            input{
+        .footer__social-newsletter {
+            input {
                 padding: 13px;
                 background-color: transparent;
                 border: none;
                 color: $white;
                 border: 2px solid $white;
                 width: 100%;
-
-                @include placeholder{
+                @include placeholder {
                     font-size: 15px;
                 }
-                
-                @include breakpoint(medium){
+                @include breakpoint(medium) {
                     width: 80%;
                     margin: 0;
                 }
             }
-
-            button{
+            a {
                 color: $white;
-                padding: 20px;
-                width: 100%;
-                margin-top: 1em;
-                font-size: 15px;
-
-                @include breakpoint(medium){
-                    width: 20%;
-                    margin-top: 0;
-                    padding: 16px;
-                }
-
-                a{
-                    color: $white;
-                }
             }
         }
     }
-    .footer__navigation{
-       
-        ul{
-
-            span{
+    .footer__navigation {
+        ul {
+            span {
                 font-size: 18px;
             }
-            
-            li{
-                a{
-                font-size: 14px;
-                    
-                    &:hover{
+            li {
+                a {
+                    font-size: 14px;
+                    &:hover {
                         color: $white;
                         opacity: 0.8;
                     }
                 }
             }
-        }   
+        }
     }
-    .footer__copyright{
+    .footer__copyright {
         color: $white;
         font-size: 13px;
-
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
             text-align: left;
         }
     }
 }
 
-.footer-secondary{
+.footer-secondary {
     text-align: center;
-
-    @include breakpoint(medium){
+    @include breakpoint(medium) {
         text-align: left;
     }
-
-    .footer-secondary__nav  li{
+    .footer-secondary__nav li {
         display: inline;
         list-style-type: none;
         line-height: 4;
         padding-left: 8px;
-       
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
             padding-right: 0.5em;
         }
-
-        a{
+        a {
             color: #656565;
             font-size: 18px;
-         
         }
     }
- 
-    .footer-secondary__social-list{
+    .footer-secondary__social-list {
         text-align: center;
-
-        @include breakpoint(medium){
+        @include breakpoint(medium) {
             text-align: left;
         }
-       
-        .fa{
+        .fa {
             color: #0899b8;
             padding-right: 0.5em;
             font-size: 30px;
-
-            @include breakpoint(medium){
-                padding: 0.7em;
+            @include breakpoint(medium) {
+                padding-top: 16px;
+                padding-left: 16px;
+                padding-right: 0;
             }
-        } 
-
-        ul{
+        }
+        ul {
             float: right;
-
-            li{
+            li {
                 display: inline;
             }
         }
     }
-
-    .footer-secondary__copyright{
+    .footer-secondary__copyright {
         text-align: left;
         color: #656565;
         font-size: 13px;

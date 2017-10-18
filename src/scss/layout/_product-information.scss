@@ -1,7 +1,35 @@
-.product-infomation{
+.product-information {
     background: #f2f2f2;
-
-    .product-information__trail{
-        color: #828282; 
+    .product-information__trail {
+        color: #828282;
+    }
+    .product-information__title {
+        margin-bottom: 1em;
+        font-size: 22px;
+    }
+    .product-information__downloads {
+        .product-information__downloads__link {
+            border-bottom: 1px solid $primary-font-color;
+            display: block;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            &:nth-child(even) {
+                border-top: 1px solid $primary-font-color;
+            }
+            a {
+                color: $primary-font-color;
+            }
+        }
+    }
+    .product-information__technical-spec {
+        background: $main-color;
+        .product-information__technical-spec__title {
+            color: $white;
+        }
+        p {
+            color: $white;
+            border-top: 1px solid $white;
+            margin-bottom: 0;
+        }
     }
 }

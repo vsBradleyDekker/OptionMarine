@@ -1,5 +1,5 @@
 <section class="searchbar pt-large pb-large">
-    <div class="row">
+    <div class="row align-middle">
         <div class="columns small-12 medium-8">
             <input placeholder="Search...">
         </div>

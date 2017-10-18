@@ -1,29 +1,26 @@
-.searchbar{
+.searchbar {
     background: $main-color;
     color: $white;
-
-    input{
+    input {
         border: none;
         outline-color: none;
         background: transparent;
         font-size: 23px;
         color: $white;
-        @include placeholder{
+        width: 100%;
+        @include placeholder {
             color: #b4d8dc;
             font-size: 23px;
         }
-
-        &:focus{
+        &:focus {
             outline: none;
         }
     }
-
-    span{
+    span {
         float: right;
         font-size: 20px;
-
-        .fa{
-            @include breakpoint(medium){
+        .fa {
+            @include breakpoint(medium) {
                 position: relative;
                 bottom: 5px;
                 left: 5px;
@@ -32,44 +29,39 @@
     }
 }
 
-.searchbar-secondary{
+.searchbar-secondary {
     background: #e7e7e7;
-    
-    .searchbar-secondary__title{
+    .searchbar-secondary__title {
         color: $main-color;
         font-size: 38px;
         font-weight: 600;
     }
-
-    .searchbar-secondary__search{
-
-        input{
-        border: none;
-        outline-color: none;
-        background: transparent;
-        font-size: 23px;
-        font-weight: 600;
-        color: $main-color;
-
-        @include placeholder{
-            color: $main-color;
+    .searchbar-secondary__search {
+        input {
+            border: none;
+            outline-color: none;
+            background: transparent;
             font-size: 23px;
-        }
-            &:focus{
+            font-weight: 600;
+            color: $main-color;
+            width: 100%;
+            @include placeholder {
+                color: $main-color;
+                font-size: 23px;
+            }
+            &:focus {
                 outline: none;
             }
         }
     }
-
-    .searchbar-secondary__bigmenu{
-        
-        span{
+    .searchbar-secondary__bigmenu {
+        span {
             float: right;
             font-size: 20px;
             color: $main-color;
             font-weight: 600;
-            .fa{
-                @include breakpoint(medium){
+            .fa {
+                @include breakpoint(medium) {
                     position: relative;
                     bottom: 5px;
                     left: 5px;
@@ -77,5 +69,4 @@
             }
         }
     }
-   
 }

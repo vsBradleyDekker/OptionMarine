@@ -1,40 +1,62 @@
-h1{
+h1 {
     color: $white;
     font-weight: 600;
-    
 }
 
-ul{
+h2 {
+    color: $primary-font-color;
+    font-weight: 600;
+}
+
+h3 {
+    color: $main-color;
+    font-size: 22px;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+p {
+    color: $primary-font-color;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+ul {
     margin-left: 0;
-    li{
+    li {
         list-style-type: none;
-        a{
+        a {
             color: $white;
             text-decoration: none;
-            a:hover{
+            a:hover {
                 opacity: 0.8;
                 color: $white;
             }
-            &:visited{
+            &:visited {
                 opacity: 0.8;
                 color: $white;
             }
-            &:focus{
+            &:focus {
                 opacity: 0.8;
                 color: $white;
             }
         }
     }
 }
-/*Gmaps Styling*/ 
+
+
+/*Gmaps Styling*/
+
 a[href^="http://maps.google.com/maps"],
 a[href^="https://maps.google.com/maps"],
 a[href^="https://www.google.com/maps"] {
     display: none !important;
 }
+
 .gmnoprint:not(.gm-bundled-control) {
     display: none;
 }
+
 .gm-bundled-control .gmnoprint {
     display: block;
 }

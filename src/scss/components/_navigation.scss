@@ -1,14 +1,11 @@
 /*--Header Navigation Menu--*/
 
-
-.header-mast__navigation{
- z-index: 1;
-    nav{
+.header-mast__navigation {
+    z-index: 1;
+    nav {
         width: 100%;
         background: transparent;
-
-        .toggle{
-           
+        .toggle {
             background: rgba(23, 136, 151, 1);
             text-align: right;
             box-sizing: border-box;
@@ -22,37 +19,30 @@
             bottom: 55px;
             right: 20px;
             cursor: pointer;
-
-            @include breakpoint(medium){
+            @include breakpoint(medium) {
                 display: none;
             }
         }
-    
-        .active{
+        .active {
             display: block;
             transition: all 3s ease-out;
-
-            @include breakpoint(medium){
+            @include breakpoint(medium) {
                 display: none;
             }
         }
-    
-        ul{
-          
+        ul {
             width: 100%;
             display: none;
             margin-top: 15px;
             padding: 0;
             float: right;
             background: rgba(23, 136, 151, 1);
-            
-            @include breakpoint(medium){
+            @include breakpoint(medium) {
                 width: 80%;
                 display: block;
                 background: transparent;
             }
-    
-            li{
+            li {
                 list-style-type: none;
                 display: block;
                 padding-right: 32px;
@@ -60,46 +50,38 @@
                 padding-top: 1em;
                 padding-bottom: 1em;
                 border-bottom: 1px solid $white;
-
-                @include breakpoint(medium){
+                @include breakpoint(medium) {
                     display: inline-block;
                     border-bottom: none;
                     padding-top: 0;
                     padding-bottom: 0;
-                    
                 }
-               
-                &:hover{
+                &:hover {
                     opacity: 0.8;
                 }
-              
-                a{  
+                a {
                     color: $white;
                     text-decoration: none;
                     font-size: 18px;
                     font-weight: 600;
-
-                    @include breakpoint(medium){
+                    @include breakpoint(medium) {
                         color: $primary-font-color;
-                    } 
+                    }
                 }
             }
-
-            span{
+            span {
                 border: 2px solid $white;
                 color: $white;
                 font-weight: 600;
                 padding: 5px;
                 display: none;
-
-                @include breakpoint(medium){
+                @include breakpoint(medium) {
                     padding: 5px;
                     font-size: 18px;
                     color: $tertiary-color;
                     border: 4px solid $tertiary-color;
                     display: inline-block;
-
-                    .fa{
+                    .fa {
                         font-size: 25px;
                         padding: 5px;
                     }
@@ -109,22 +91,19 @@
     }
 }
 
+
 /*footer Navigation Menu*/
 
-.footer__navigation{
-    
-    ul{
-        
-        span{
+.footer__navigation {
+    ul {
+        span {
             color: $white;
             font-weight: 600;
             display: block;
             font-size: 20px;
         }
-
-        li{
+        li {
             padding-top: .5em;
         }
     }
 }
-    
