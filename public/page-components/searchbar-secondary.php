@@ -1,7 +1,7 @@
 <section class="searchbar-secondary pt-large pb-large">
     <div class="row align-middle">
         <div class="columns small-12 medium-8">
-            <h2 class="searchbar-secondary__title">Materials</h2>
+            <h2 class="searchbar-secondary__title">Zippers</h2>
         </div>
         <div class="columns small-12 medium-2 searchbar-secondary__bigmenu">
             <span> A to Z index <i class="fa fa-sort-desc" aria-hidden="true"></i></span>

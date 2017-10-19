@@ -1,73 +1,117 @@
 .footer {
-    background: $tertiary-color;
     text-align: center;
+    background: $tertiary-color;
+
     @include breakpoint(medium) {
         text-align: left;
     }
+
     .footer__social {
+
         .footer__social-logo {
             width: 50%;
         }
+
         ul {
             margin-top: 20px;
+
             li {
                 display: inline !important;
                 padding-left: 1em;
+
                 &:first-child {
                     padding-left: 0;
                 }
+
                 .fa {
                     font-size: 29px;
                 }
             }
         }
+
         .footer__social-info {
+
             span {
                 display: block;
                 color: $white;
                 font-size: 15px;
+
                 a {
                     color: $white;
+
                     a:hover {
                         color: $white;
                         opacity: 0.8;
                     }
                 }
             }
+
             .fa {
                 font-size: 29px;
                 color: #027c93;
             }
         }
+
         .footer__social-newsletter {
-            input {
-                padding: 13px;
-                background-color: transparent;
-                border: none;
+
+            .input-group-field{
+                padding-top: 1em;
+                padding-bottom: 1em;
+                padding-left: 0.5em;
+                border: 3px solid #FFF;
+                background: transparent;
                 color: $white;
-                border: 2px solid $white;
-                width: 100%;
-                @include placeholder {
-                    font-size: 15px;
+
+                &:focus{
+                    outline: none;
                 }
-                @include breakpoint(medium) {
-                    width: 80%;
-                    margin: 0;
+
+                @include placeholder{
+                    color: $white;
+                }
+                @include breakpoint(medium){
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    padding-left: 15px;
                 }
             }
-            a {
-                color: $white;
+
+            .input-group-button{
+
+                input{
+                    display: block;
+                    border: none;
+                    padding-left: 35px;
+                    padding-right: 35px;
+                    background: $main-color;
+                    color: $white;
+                  
+                  
+
+                    &:focus{
+                        outline: none;
+                    }
+
+                    @include breakpoint(medium){
+                        display: inline-block;
+                    }
+                }
             }
         }
     }
     .footer__navigation {
+
         ul {
+
             span {
                 font-size: 18px;
             }
+            
             li {
+
                 a {
                     font-size: 14px;
+                    
                     &:hover {
                         color: $white;
                         opacity: 0.8;
@@ -79,6 +123,7 @@
     .footer__copyright {
         color: $white;
         font-size: 13px;
+
         @include breakpoint(medium) {
             text-align: left;
         }
@@ -87,47 +132,60 @@
 
 .footer-secondary {
     text-align: center;
+
     @include breakpoint(medium) {
         text-align: left;
     }
+    
     .footer-secondary__nav li {
+
         display: inline;
         list-style-type: none;
-        line-height: 4;
         padding-left: 8px;
+        line-height: 4;
+
         @include breakpoint(medium) {
             padding-right: 0.5em;
         }
+
         a {
             color: #656565;
             font-size: 18px;
         }
     }
+
     .footer-secondary__social-list {
         text-align: center;
+
         @include breakpoint(medium) {
             text-align: left;
         }
+
         .fa {
-            color: #0899b8;
             padding-right: 0.5em;
             font-size: 30px;
+            color: #0899b8;
+        
             @include breakpoint(medium) {
                 padding-top: 16px;
                 padding-left: 16px;
                 padding-right: 0;
             }
         }
+
         ul {
             float: right;
+
             li {
                 display: inline;
             }
         }
     }
+
     .footer-secondary__copyright {
         text-align: left;
-        color: #656565;
         font-size: 13px;
+        color: #656565;
+        
     }
 }

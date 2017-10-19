@@ -4,13 +4,9 @@
 /*Mixin for Form Input-placeholders*/
 /*Verticle-align  Mixin*/
 /*Box-shadow Mixing*/
-.no-padding {
-  padding: 0 !important; }
-
-.pad-ltr-small {
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-right: 2em; }
+/*turns elements display to inline-block*/
+.inline-block {
+  display: inline-block; }
 
 /*Float classes*/
 .float-right {
@@ -22,21 +18,33 @@
 .float-right-small {
   float: left; }
 
+/*align-center class*/
 .align-items {
   text-align: center; }
   @media screen and (min-width: 40em) {
     .align-items {
       text-align: left; } }
 
+.vertical-align-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
 /*padding classes*/
 .pt-small {
   padding-top: 18px !important; }
+
+.pl-small {
+  padding-left: 1em; }
 
 .pt-medium {
   padding-top: 28px !important; }
 
 .pt-large {
   padding-top: 55px !important; }
+
+.pt-xl {
+  padding-top: 86px !important; }
 
 .pb-small {
   padding-bottom: 18px !important; }
@@ -47,11 +55,22 @@
 .pb-large {
   padding-bottom: 55px !important; }
 
+.pb-xl {
+  padding-bottom: 68px !important; }
+
+.pad-ltr-small {
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em; }
+
 .no-pad {
   padding: 0 !important; }
 
-.no-margin {
-  margin: 0 !important; }
+.no-padding {
+  padding: 0 !important; }
+
+.pad-all-xs {
+  padding: 0.5em; }
 
 .pad-top-bot {
   padding-top: 1em;
@@ -66,29 +85,42 @@
       padding-bottom: 4em; } }
 
 /*margin classes*/
+.no-margin {
+  margin: 0 !important; }
+
+.mb-small {
+  margin-bottom: 1em; }
+
 .mb-medium {
   margin-top: 1.875em; }
 
 .mb-large {
   margin-bottom: 3.75em; }
 
-.vertical-align-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap; }
+/*buttons*/
+/*note: made for a element*/
+.cta-button {
+  background: transparent;
+  color: #555555;
+  border: 3px solid #555555;
+  font-size: 18px;
+  padding-top: 0.5em;
+  padding-left: 0;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  font-weight: 600; }
+  .cta-button:hover {
+    color: #555555;
+    opacity: 0.8; }
 
-.white-text {
-  color: #ffffff !important; }
-
+/*background classes*/
 .gray-background {
   background: #e1e1e1; }
 
 .white-background {
   background: #ffffff; }
 
-.inline-block {
-  display: inline-block; }
-
+/*Border classes*/
 .primary-border {
   border: 2px solid #555555;
   color: #555555; }
@@ -105,6 +137,19 @@
   border: 0.5px solid #555555;
   color: #555555; }
 
+.border-right {
+  border-right: 1px solid #ffffff; }
+
+.border-bottom {
+  border-bottom: 1px solid #ffffff; }
+
+.bt-border-light {
+  border-bottom: 1px solid #d9d9d9; }
+
+.lft-border-light {
+  border-left: 1px solid #d9d9d9; }
+
+/*underline Class*/
 @media screen and (min-width: 40em) {
   .underline {
     padding-bottom: 15px;
@@ -115,6 +160,7 @@
   border: none !important;
   margin-bottom: 0 !important; }
 
+/*My Default Gmaps Style*/
 .acf-map {
   width: 100%;
   height: 400px;
@@ -8161,8 +8207,8 @@ a[href^="https://www.google.com/maps"] {
   display: block; }
 
 .footer {
-  background: #3a3a3a;
-  text-align: center; }
+  text-align: center;
+  background: #3a3a3a; }
   @media print, screen and (min-width: 40em) {
     .footer {
       text-align: left; } }
@@ -8189,27 +8235,40 @@ a[href^="https://www.google.com/maps"] {
   .footer .footer__social .footer__social-info .fa {
     font-size: 29px;
     color: #027c93; }
-  .footer .footer__social .footer__social-newsletter input {
-    padding: 13px;
-    background-color: transparent;
-    border: none;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    width: 100%; }
-    .footer .footer__social .footer__social-newsletter input::-webkit-input-placeholder {
-      font-size: 15px; }
-    .footer .footer__social .footer__social-newsletter input:-moz-placeholder {
-      font-size: 15px; }
-    .footer .footer__social .footer__social-newsletter input::-moz-placeholder {
-      font-size: 15px; }
-    .footer .footer__social .footer__social-newsletter input:-ms-input-placeholder {
-      font-size: 15px; }
-    @media print, screen and (min-width: 40em) {
-      .footer .footer__social .footer__social-newsletter input {
-        width: 80%;
-        margin: 0; } }
-  .footer .footer__social .footer__social-newsletter a {
+  .footer .footer__social .footer__social-newsletter .input-group-field {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    border: 3px solid #FFF;
+    background: transparent;
     color: #ffffff; }
+    .footer .footer__social .footer__social-newsletter .input-group-field:focus {
+      outline: none; }
+    .footer .footer__social .footer__social-newsletter .input-group-field::-webkit-input-placeholder {
+      color: #ffffff; }
+    .footer .footer__social .footer__social-newsletter .input-group-field:-moz-placeholder {
+      color: #ffffff; }
+    .footer .footer__social .footer__social-newsletter .input-group-field::-moz-placeholder {
+      color: #ffffff; }
+    .footer .footer__social .footer__social-newsletter .input-group-field:-ms-input-placeholder {
+      color: #ffffff; }
+    @media print, screen and (min-width: 40em) {
+      .footer .footer__social .footer__social-newsletter .input-group-field {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px; } }
+  .footer .footer__social .footer__social-newsletter .input-group-button input {
+    display: block;
+    border: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: #027d8b;
+    color: #ffffff; }
+    .footer .footer__social .footer__social-newsletter .input-group-button input:focus {
+      outline: none; }
+    @media print, screen and (min-width: 40em) {
+      .footer .footer__social .footer__social-newsletter .input-group-button input {
+        display: inline-block; } }
   .footer .footer__navigation ul span {
     font-size: 18px; }
   .footer .footer__navigation ul li a {
@@ -8232,8 +8291,8 @@ a[href^="https://www.google.com/maps"] {
   .footer-secondary .footer-secondary__nav li {
     display: inline;
     list-style-type: none;
-    line-height: 4;
-    padding-left: 8px; }
+    padding-left: 8px;
+    line-height: 4; }
     @media print, screen and (min-width: 40em) {
       .footer-secondary .footer-secondary__nav li {
         padding-right: 0.5em; } }
@@ -8246,9 +8305,9 @@ a[href^="https://www.google.com/maps"] {
       .footer-secondary .footer-secondary__social-list {
         text-align: left; } }
     .footer-secondary .footer-secondary__social-list .fa {
-      color: #0899b8;
       padding-right: 0.5em;
-      font-size: 30px; }
+      font-size: 30px;
+      color: #0899b8; }
       @media print, screen and (min-width: 40em) {
         .footer-secondary .footer-secondary__social-list .fa {
           padding-top: 16px;
@@ -8260,8 +8319,8 @@ a[href^="https://www.google.com/maps"] {
         display: inline; }
   .footer-secondary .footer-secondary__copyright {
     text-align: left;
-    color: #656565;
-    font-size: 13px; }
+    font-size: 13px;
+    color: #656565; }
 
 .products-section {
   background: #eee; }
@@ -8272,16 +8331,16 @@ a[href^="https://www.google.com/maps"] {
   .products-section .products-section__listing .wrapper {
     position: relative; }
     .products-section .products-section__listing .wrapper .hover {
-      display: none;
-      background: #027d8b;
       height: 100%;
-      z-index: 9999999999999;
-      opacity: 0.9;
+      display: none;
       position: absolute;
       left: 0;
       top: 0;
       bottom: 0;
-      right: 0; }
+      right: 0;
+      z-index: 9999999999999;
+      opacity: 0.9;
+      background: #027d8b; }
       .products-section .products-section__listing .wrapper .hover .border {
         margin: 18px;
         border: 2px solid #fff; }
@@ -8291,26 +8350,26 @@ a[href^="https://www.google.com/maps"] {
         color: #ffffff; }
       .products-section .products-section__listing .wrapper .hover a {
         display: inline-block;
+        border: 2px solid #ffffff;
         padding: 10px 55px;
         background: #027d8b;
         color: #ffffff;
-        border: 2px solid #ffffff;
         cursor: pointer; }
     .products-section .products-section__listing .wrapper:hover .hover {
       display: block; }
   .products-section .products-section__listing img.listing__image {
-    z-index: 300;
     max-width: 100%;
-    width: 100%; }
+    width: 100%;
+    z-index: 300; }
   .products-section .products-section__listing .products-section__listing__genre {
     display: block;
-    background: #027d8b;
-    color: #ffffff;
     padding: 16px 10px;
-    font-size: 18px; }
+    background: #027d8b;
+    font-size: 18px;
+    color: #ffffff; }
     .products-section .products-section__listing .products-section__listing__genre a {
-      color: #ffffff;
-      font-size: 18px; }
+      font-size: 18px;
+      color: #ffffff; }
 
 .contact-info {
   background: #eee; }
@@ -8336,9 +8395,9 @@ a[href^="https://www.google.com/maps"] {
         .contact-info .contact-info__list ul li a {
           color: #828282; }
         .contact-info .contact-info__list ul li .fa {
+          position: relative;
           color: #027c93;
-          font-size: 30px;
-          position: relative; }
+          font-size: 30px; }
         .contact-info .contact-info__list ul li .fa-envelope {
           top: 5px;
           right: 15px; }
@@ -8353,9 +8412,9 @@ a[href^="https://www.google.com/maps"] {
     padding-right: 2em;
     padding-top: 0; }
     .contact-info .contact-info__caption .contact-info__caption-title {
+      margin-bottom: 0;
       color: #207c88;
-      font-size: 22px;
-      margin-bottom: 0; }
+      font-size: 22px; }
   .contact-info .contact-info__social-list {
     padding-left: 2em;
     padding-right: 2em; }
@@ -8368,7 +8427,8 @@ a[href^="https://www.google.com/maps"] {
         color: #0899b8; }
 
 .contact-form .contact-form__title {
-  color: #565656; }
+  color: #565656;
+  font-size: 22px; }
 
 .contact-form .contact-form__form {
   padding: 0; }
@@ -8378,11 +8438,11 @@ a[href^="https://www.google.com/maps"] {
       padding-top: 2em;
       padding-right: 2em; } }
   .contact-form .contact-form__form input {
-    border-color: #7d7d7d;
     padding-top: 2em;
     padding-bottom: 2em;
     padding-left: 1em;
-    padding-right: 2em; }
+    padding-right: 2em;
+    border-color: #7d7d7d; }
     .contact-form .contact-form__form input::-webkit-input-placeholder {
       color: #7d7d7d;
       font-weight: 300;
@@ -8400,9 +8460,9 @@ a[href^="https://www.google.com/maps"] {
       font-weight: 300;
       font-size: 17px; }
   .contact-form .contact-form__form textarea {
+    padding-left: 1em;
     resize: none;
-    border-color: #7d7d7d;
-    padding-left: 1em; }
+    border-color: #7d7d7d; }
     .contact-form .contact-form__form textarea::-webkit-input-placeholder {
       color: #7d7d7d;
       font-weight: 300;
@@ -8420,13 +8480,13 @@ a[href^="https://www.google.com/maps"] {
       font-weight: 300;
       font-size: 17px; }
   .contact-form .contact-form__form button {
-    padding: 1em;
     display: block;
     width: 100%;
+    padding: 1em;
     font-size: 20px;
     font-weight: 600;
-    color: #FFF;
     background: #207c89;
+    color: #FFF;
     cursor: pointer; }
 
 .header-mast {
@@ -8437,11 +8497,34 @@ a[href^="https://www.google.com/maps"] {
       padding-top: 0;
       padding-bottom: 0; } }
   .header-mast .header-mast__logo-holder .header-mast__logo-holder__logo {
-    padding-bottom: 1em;
-    width: 55%; }
+    width: 55%;
+    padding-bottom: 1em; }
     @media print, screen and (min-width: 40em) {
       .header-mast .header-mast__logo-holder .header-mast__logo-holder__logo {
         width: 100%; } }
+  .header-mast .nav .menu-item-has-children {
+    position: relative;
+    padding-right: 0; }
+    .header-mast .nav .menu-item-has-children .sub-menu {
+      display: none;
+      width: auto;
+      position: absolute;
+      margin: 0;
+      background-color: #027d8b; }
+      .header-mast .nav .menu-item-has-children .sub-menu li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px; }
+        .header-mast .nav .menu-item-has-children .sub-menu li a {
+          white-space: nowrap;
+          color: #ffffff; }
+    .header-mast .nav .menu-item-has-children:hover > .sub-menu {
+      display: block; }
+  .header-mast .nav > .menu-item-has-children > .sub-menu {
+    top: 100%; }
+    .header-mast .nav > .menu-item-has-children > .sub-menu > .menu-item-has-children:hover .sub-menu {
+      left: 100%;
+      top: 0; }
 
 .header-secondary .header-secondary__logo {
   width: 55%;
@@ -8450,82 +8533,131 @@ a[href^="https://www.google.com/maps"] {
 .header-secondary .nav .menu-item-has-children {
   position: relative; }
   .header-secondary .nav .menu-item-has-children .sub-menu {
-    background-color: #027d8b;
     display: none;
     position: absolute;
+    width: auto;
     margin: 0;
-    width: auto; }
-    .header-secondary .nav .menu-item-has-children .sub-menu a {
-      white-space: nowrap; }
+    background-color: #027d8b; }
+    .header-secondary .nav .menu-item-has-children .sub-menu li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px; }
+      .header-secondary .nav .menu-item-has-children .sub-menu li a {
+        white-space: nowrap;
+        color: #ffffff; }
   .header-secondary .nav .menu-item-has-children:hover > .sub-menu {
     display: block; }
 
 .header-secondary .nav > .menu-item-has-children > .sub-menu {
   top: 100%; }
-  .header-secondary .nav > .menu-item-has-children > .sub-menu > .menu-item-has-children:hover > .sub-menu {
+  .header-secondary .nav > .menu-item-has-children > .sub-menu > .menu-item-has-children:hover .sub-menu {
     left: 100%;
     top: 0; }
 
 .product-information {
   background: #f2f2f2; }
-  .product-information .product-information__trail {
-    color: #828282; }
+  .product-information .row {
+    text-align: center; }
+    @media print, screen and (min-width: 40em) {
+      .product-information .row {
+        text-align: left; } }
+    .product-information .row .product-information__trail {
+      color: #828282; }
   .product-information .product-information__title {
     margin-bottom: 1em;
     font-size: 22px; }
-  .product-information .product-information__downloads .product-information__downloads__link {
-    border-bottom: 1px solid #555555;
-    display: block;
-    padding-top: 16px;
-    padding-bottom: 16px; }
-    .product-information .product-information__downloads .product-information__downloads__link:nth-child(even) {
-      border-top: 1px solid #555555; }
-    .product-information .product-information__downloads .product-information__downloads__link a {
+  .product-information .product-infomation__description {
+    text-align: left; }
+  .product-information .product-information__type__title-description {
+    text-align: left; }
+  .product-information .product-information__downloads .product-information__downloads-title {
+    border-bottom: none; }
+    @media print, screen and (min-width: 40em) {
+      .product-information .product-information__downloads .product-information__downloads-title {
+        border-bottom: 1px solid #d9d9d9; } }
+  .product-information .product-information__downloads .product-information__downloads-link {
+    border-right: 1px solid #d9d9d9; }
+    @media print, screen and (min-width: 40em) {
+      .product-information .product-information__downloads .product-information__downloads-link {
+        border-right: none; } }
+    .product-information .product-information__downloads .product-information__downloads-link a {
       color: #555555; }
+  .product-information .product-information__gallery__listing img {
+    max-width: 100%;
+    width: 100%; }
   .product-information .product-information__technical-spec {
     background: #027d8b; }
     .product-information .product-information__technical-spec .product-information__technical-spec__title {
       color: #ffffff; }
+    .product-information .product-information__technical-spec .product-information__technical-spec__part {
+      border-left: 1px solid #ffffff; }
+      @media print, screen and (min-width: 40em) {
+        .product-information .product-information__technical-spec .product-information__technical-spec__part {
+          border-left: none; } }
     .product-information .product-information__technical-spec p {
-      color: #ffffff;
       border-top: 1px solid #ffffff;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      color: #ffffff; }
 
 .product_category {
   background: #f2f2f2; }
-  .product_category .product_category-trail {
-    color: #828282; }
+  .product_category .row {
+    text-align: center; }
+    @media print, screen and (min-width: 40em) {
+      .product_category .row {
+        text-align: left; } }
+    .product_category .row .product_category-trail {
+      color: #828282; }
   .product_category .product-category__title {
     padding-top: 1em;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    color: #555555; }
+    @media print, screen and (min-width: 40em) {
+      .product_category .product-category__title {
+        text-align: left; } }
   .product_category .product-category__description {
+    text-align: left;
     color: #828282; }
   .product_category .product-category__uses {
     padding-top: 1em;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    text-align: center; }
+    @media print, screen and (min-width: 40em) {
+      .product_category .product-category__uses {
+        text-align: left; } }
   .product_category .product-category__list {
-    background: #027d8b;
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
-    padding-left: 2.5em;
-    padding-right: 2.5em; }
+    background: #027d8b; }
     .product_category .product-category__list .product-category__list-title {
+      text-align: center;
       font-size: 22px;
       color: #ffffff; }
+      @media print, screen and (min-width: 40em) {
+        .product_category .product-category__list .product-category__list-title {
+          border-left: 0;
+          text-align: left; } }
     .product_category .product-category__list .product-list__name {
-      color: #ffffff;
-      font-size: 18px;
       display: block;
+      border-top: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      border-left: 1px solid #ffffff;
       padding-top: 0.5em;
       padding-bottom: 0.5em;
-      border-top: 1px solid #ffffff;
-      border-right: 1px solid #ffffff; }
+      text-align: center;
+      font-size: 18px;
+      color: #ffffff; }
+      @media print, screen and (min-width: 40em) {
+        .product_category .product-category__list .product-list__name {
+          border-left: 0;
+          text-align: left; } }
     .product_category .product-category__list a {
-      color: #ffffff;
       display: block;
       border-top: 1px solid #ffffff;
       padding-top: 0.5em;
-      padding-bottom: 0.5em; }
+      padding-bottom: 0.5em;
+      color: #ffffff; }
 
 .button {
   width: 100%;
@@ -8542,18 +8674,33 @@ a[href^="https://www.google.com/maps"] {
     color: #ffffff !important; }
 
 .button-sm {
-  color: #ffffff;
-  padding: 20px;
   width: 100%;
+  padding: 20px;
   margin-top: 1em;
-  font-size: 15px;
   background: #027d8b;
+  font-size: 15px;
+  color: #ffffff;
   cursor: pointer; }
   @media print, screen and (min-width: 40em) {
     .button-sm {
       width: 20%;
       margin-top: 0;
       padding: 16px; } }
+
+.button-head {
+  width: 100%;
+  margin-top: 1em;
+  padding: 10px 20px;
+  border: 3px solid #555555;
+  background: #ffffff;
+  font-size: 15px;
+  color: #555555;
+  cursor: pointer; }
+  @media print, screen and (min-width: 40em) {
+    .button-head {
+      width: 20%;
+      margin-top: 0;
+      padding: 10px 20px; } }
 
 .affilaites {
   text-align: center;
@@ -8662,15 +8809,19 @@ a[href^="https://www.google.com/maps"] {
       height: 1024px; } }
 
 .searchbar {
+  text-align: center;
   background: #027d8b;
   color: #ffffff; }
+  @media print, screen and (min-width: 40em) {
+    .searchbar {
+      text-align: left; } }
   .searchbar input {
+    width: 100%;
     border: none;
-    outline-color: none;
     background: transparent;
     font-size: 23px;
-    color: #ffffff;
-    width: 100%; }
+    outline-color: none;
+    color: #ffffff; }
     .searchbar input::-webkit-input-placeholder {
       color: #b4d8dc;
       font-size: 23px; }
@@ -8688,11 +8839,9 @@ a[href^="https://www.google.com/maps"] {
   .searchbar span {
     float: right;
     font-size: 20px; }
-    @media print, screen and (min-width: 40em) {
-      .searchbar span .fa {
-        position: relative;
-        bottom: 5px;
-        left: 5px; } }
+    .searchbar span .fa {
+      position: relative;
+      bottom: 5px; }
 
 .searchbar-secondary {
   background: #e7e7e7; }
@@ -8701,13 +8850,13 @@ a[href^="https://www.google.com/maps"] {
     font-size: 38px;
     font-weight: 600; }
   .searchbar-secondary .searchbar-secondary__search input {
+    width: 100%;
     border: none;
-    outline-color: none;
     background: transparent;
     font-size: 23px;
     font-weight: 600;
-    color: #027d8b;
-    width: 100%; }
+    outline-color: none;
+    color: #027d8b; }
     .searchbar-secondary .searchbar-secondary__search input::-webkit-input-placeholder {
       color: #027d8b;
       font-size: 23px; }
@@ -8725,8 +8874,8 @@ a[href^="https://www.google.com/maps"] {
   .searchbar-secondary .searchbar-secondary__bigmenu span {
     float: right;
     font-size: 20px;
-    color: #027d8b;
-    font-weight: 600; }
+    font-weight: 600;
+    color: #027d8b; }
     @media print, screen and (min-width: 40em) {
       .searchbar-secondary .searchbar-secondary__bigmenu span .fa {
         position: relative;
@@ -8734,10 +8883,12 @@ a[href^="https://www.google.com/maps"] {
         left: 5px; } }
 
 .mega-menu {
-  background: #0a9ec2;
-  display: none; }
+  display: none;
+  background: #0a9ec2; }
   .mega-menu h4 {
     color: #ffffff; }
+  .mega-menu .active {
+    display: block; }
 
 /*--Header Navigation Menu--*/
 .header-mast__navigation {
@@ -8746,34 +8897,31 @@ a[href^="https://www.google.com/maps"] {
     width: 100%;
     background: transparent; }
     .header-mast__navigation nav .toggle {
-      background: #178897;
-      text-align: right;
-      box-sizing: border-box;
-      color: #ffffff;
-      font-size: 30px;
       display: block;
       float: right;
       position: relative;
-      padding: 5px 17px;
-      border-radius: 10px;
-      bottom: 55px;
       right: 20px;
+      bottom: 55px;
+      padding: 5px 17px;
+      box-sizing: border-box;
+      text-align: right;
+      background: #178897;
+      font-size: 30px;
+      color: #ffffff;
+      border-radius: 10px;
+      transition: all 3s ease-out;
       cursor: pointer; }
       @media print, screen and (min-width: 40em) {
         .header-mast__navigation nav .toggle {
           display: none; } }
     .header-mast__navigation nav .active {
-      display: block;
-      transition: all 3s ease-out; }
-      @media print, screen and (min-width: 40em) {
-        .header-mast__navigation nav .active {
-          display: none; } }
+      display: block; }
     .header-mast__navigation nav ul {
       width: 100%;
       display: none;
+      float: right;
       margin-top: 15px;
       padding: 0;
-      float: right;
       background: #178897; }
       @media print, screen and (min-width: 40em) {
         .header-mast__navigation nav ul {
@@ -8781,13 +8929,13 @@ a[href^="https://www.google.com/maps"] {
           display: block;
           background: transparent; } }
       .header-mast__navigation nav ul li {
-        list-style-type: none;
         display: block;
-        padding-right: 32px;
-        text-align: left;
         padding-top: 1em;
         padding-bottom: 1em;
-        border-bottom: 1px solid #ffffff; }
+        padding-right: 32px;
+        border-bottom: 1px solid #ffffff;
+        list-style-type: none;
+        text-align: left; }
         @media print, screen and (min-width: 40em) {
           .header-mast__navigation nav ul li {
             display: inline-block;
@@ -8797,29 +8945,15 @@ a[href^="https://www.google.com/maps"] {
         .header-mast__navigation nav ul li:hover {
           opacity: 0.8; }
         .header-mast__navigation nav ul li a {
-          color: #ffffff;
           text-decoration: none;
+          color: #ffffff;
           font-size: 18px;
           font-weight: 600; }
           @media print, screen and (min-width: 40em) {
             .header-mast__navigation nav ul li a {
               color: #555555; } }
-      .header-mast__navigation nav ul span {
-        border: 2px solid #ffffff;
-        color: #ffffff;
-        font-weight: 600;
-        padding: 5px;
-        display: none; }
-        @media print, screen and (min-width: 40em) {
-          .header-mast__navigation nav ul span {
-            padding: 5px;
-            font-size: 18px;
-            color: #3a3a3a;
-            border: 4px solid #3a3a3a;
-            display: inline-block; }
-            .header-mast__navigation nav ul span .fa {
-              font-size: 25px;
-              padding: 5px; } }
+          .header-mast__navigation nav ul li a .fa {
+            padding: 0.5em; }
 
 /*footer Navigation Menu*/
 .footer__navigation ul span {

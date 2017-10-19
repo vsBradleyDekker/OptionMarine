@@ -1,13 +1,8 @@
-.no-padding {
-  padding: 0!important;
-}
+/*turns elements display to inline-block*/
 
-.pad-ltr-small {
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
+.inline-block {
+  display: inline-block;
 }
-
 
 /*Float classes*/
 
@@ -22,6 +17,7 @@
 .float-right-small {
   float: left;
 }
+/*align-center class*/ 
 
 .align-items {
   text-align: center;
@@ -30,11 +26,20 @@
   }
 }
 
+.vertical-align-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 /*padding classes*/
 
 .pt-small {
   padding-top: 18px!important;
+}
+
+.pl-small{
+  padding-left: 1em;
 }
 
 .pt-medium {
@@ -44,7 +49,9 @@
 .pt-large {
   padding-top: 55px!important;
 }
-
+.pt-xl{
+  padding-top: 86px!important;
+}
 .pb-small {
   padding-bottom: 18px!important;
 }
@@ -57,29 +64,54 @@
   padding-bottom: 55px!important;
 }
 
+.pb-xl{
+  padding-bottom: 68px!important;
+
+}
+
+.pad-ltr-small {
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
 .no-pad {
   padding: 0 !important;
 }
 
-.no-margin {
-  margin: 0!important;
+.no-padding {
+  padding: 0!important;
+}
+
+.pad-all-xs{
+  padding: 0.5em;
 }
 
 .pad-top-bot {
   padding-top: 1em;
   padding-bottom: 1em;
+
   @media screen and (min-width: 40em) {
     padding-top: 2em;
     padding-bottom: 2em;
   }
+
   @media screen and (min-width: 64em) {
     padding-top: 4em;
     padding-bottom: 4em;
   }
+
 }
 
-
 /*margin classes*/
+
+.no-margin {
+  margin: 0!important;
+}
+
+.mb-small{
+  margin-bottom: 1em;
+}
 
 .mb-medium {
   margin-top: 1.875em;
@@ -88,16 +120,26 @@
 .mb-large {
   margin-bottom: 3.75em;
 }
+/*buttons*/
 
-.vertical-align-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+/*note: made for a element*/
+.cta-button{
+  background: transparent;
+  color: #555555;
+  border: 3px solid #555555;
+  font-size: 18px;
+  padding-top: 0.5em;
+  padding-left: 0;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  font-weight: 600;
+  &:hover{
+    color: #555555;
+    opacity: 0.8;
+  }
 }
 
-.white-text {
-  color: $white !important;
-}
+/*background classes*/
 
 .gray-background {
   background: $body-background-secondary;
@@ -107,9 +149,7 @@
   background: $white;
 }
 
-.inline-block {
-  display: inline-block;
-}
+/*Border classes*/
 
 .primary-border {
   border: 2px solid $border-primary;
@@ -131,13 +171,30 @@
   color: $border-primary;
 }
 
+.border-right{
+  border-right: 1px solid $white;
+}
+
+.border-bottom{
+  border-bottom: 1px solid $white;
+}
+
+.bt-border-light{
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.lft-border-light{
+  border-left: 1px solid #d9d9d9;
+}
+
+/*underline Class*/
+
 .underline {
   @media screen and (min-width: 40em) {
     padding-bottom: 15px;
     border-bottom: 5px solid $white;
   }
 }
-
 
 /*Turns of default styling for .thumbnail*/
 
@@ -146,6 +203,7 @@
   margin-bottom: 0!important;
 }
 
+/*My Default Gmaps Style*/ 
 .acf-map {
   width: 100%;
   height: 400px;

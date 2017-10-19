@@ -3,16 +3,19 @@
     height: 80%;
     margin-left: auto;
     margin-right: auto;
+
     @include breakpoint(medium) {
         width: 86%;
         height: 68%;
     }
+
     @include breakpoint(large) {
         margin-top: 10em;
         height: 55%;
         width: 35%;
         padding: 14em;
     }
+
     .banner__background {
         position: absolute;
         background: rgba(23, 136, 151, 0.9);
@@ -23,6 +26,7 @@
         z-index: 100;
         opacity: 0.8;
     }
+
     .banner__content {
         position: absolute;
         left: 0;
@@ -30,31 +34,39 @@
         top: 0;
         bottom: 0;
         z-index: 99999;
+
         @include breakpoint(medium) {
             margin: 30px;
             border: 3px solid white;
         }
+
         .banner__content-title {
             padding-top: 1em;
             margin-bottom: 1em;
+            
             @include breakpoint(medium) {
                 margin-bottom: 0.5em;
                 padding-top: 0.5em;
                 font-size: 56px;
+
             }
+
             @include breakpoint(large) {
                 padding-top: 1em;
                 margin-bottom: 1em;
             }
         }
+
         .banner__content-subtitle {
             color: $white;
             margin-bottom: 2em;
+
             @include breakpoint(medium) {
                 margin-bottom: 1em;
                 font-size: 28px;
             }
         }
+
         .banner__content-button {
             display: block;
             width: 100%;
@@ -63,15 +75,18 @@
             padding-bottom: 16px;
             margin-left: auto;
             margin-right: auto;
+
             @include breakpoint(medium) {
                 display: inline-block;
                 width: 50%;
                 font-size: 20px;
             }
+
             @include breakpoint(medium) {
                 display: inline-block;
                 width: 50%;
             }
+            
             a {
                 color: rgba(23, 136, 151, 0.9);
             }

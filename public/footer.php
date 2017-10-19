@@ -34,8 +34,8 @@
                     </a>
                 </li>
             </ul>
-            <div class="footer__social-info pt-small">
-                <span>
+            <div class="footer__social-info pt-large">
+                <span class="pb-small">
                     <i class="fa fa-phone" aria-hidden="true"></i> 03 9763 3166</span>
                 <span>
                     <a href="mailto:info@optionmarine.com.au?Subject=" "" target="_top">
@@ -43,10 +43,12 @@
                 </a>
             </div>
             <div class="footer__social-newsletter pt-large">
-                <input placeholder="Subscribe to Newsletter">
-                <button class="button-sm" type="submit">
-                    <a href="#">Go</a>
-                </button>
+                <div class="input-group">
+                    <input class="input-group-field" placeholder="Subscribe to our newsletter...">
+                    <div class="input-group-button">
+                        <input type="submit" value="Go">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="columns footer__navigation small-12 medium-3">

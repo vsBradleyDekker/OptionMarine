@@ -11,7 +11,7 @@
 
 <body class="bg-grey">
     <header class="hero-image">
-        <div class="row">
+        <div class="row align-middle">
             <div class="columns small-12 medium-4">
                 <div class="header-mast__logo-holder">
                     <a href="/index.php">
@@ -38,8 +38,8 @@
                             <li>
                                 <a href="../pages/contact.php">Contact Us</a>
                             </li>
-                            <span>
-                                <i class="fa fa-phone" aria-hidden="true"></i>(03) 9763 3166</span>
+                            <a class="cta-button hide-for-small-only" href="../pages/contact.php">
+                                <i class="fa fa-phone pad-all-xs"></i>(03) 9763 3166</a>
                         </ul>
                     </nav>
                 </div>

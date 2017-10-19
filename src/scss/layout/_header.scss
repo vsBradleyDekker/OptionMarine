@@ -1,16 +1,75 @@
 .header-mast {
     padding-top: 1em;
     padding-bottom: 1em;
+
     @include breakpoint(medium) {
         padding-top: 0;
         padding-bottom: 0;
     }
+
     .header-mast__logo-holder {
+
         .header-mast__logo-holder__logo {
-            padding-bottom: 1em;
             width: 55%;
+            padding-bottom: 1em;
+           
+
             @include breakpoint(medium) {
                 width: 100%;
+            }
+        }
+    }
+
+    .nav {
+
+        .menu-item-has-children {
+            position: relative;
+            padding-right: 0;
+         
+            .sub-menu {
+                display: none;
+                width: auto;
+                position: absolute;
+                margin: 0;
+                background-color: $main-color;
+
+                li{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-left: 5px;
+
+                    a {
+                        white-space: nowrap;
+                        color: $white;
+                    }
+                }
+            }
+            
+            &:hover{
+    
+                > .sub-menu{
+                    display: block;
+                }
+            }
+    
+        }
+        > .menu-item-has-children{
+            
+            > .sub-menu{
+                
+                top: 100%;
+    
+                >.menu-item-has-children {
+                    
+                    &:hover {
+                        .sub-menu {
+                            left: 100%;
+                            top: 0;
+                        }
+                    }
+                    
+                }
+    
             }
         }
     }
@@ -25,16 +84,26 @@
     }
 
     .nav {
+
         .menu-item-has-children {
             position: relative;
+
             .sub-menu {
-                background-color: $main-color;
                 display: none;
                 position: absolute;
-                margin: 0;
                 width: auto;
-                a {
-                    white-space: nowrap;
+                margin: 0;
+                background-color: $main-color;
+
+                li{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-left: 5px;
+
+                    a {
+                        white-space: nowrap;
+                        color: $white;
+                    }
                 }
             }
             
@@ -47,7 +116,7 @@
     
         }
         > .menu-item-has-children{
-    
+            
             > .sub-menu{
                 
                 top: 100%;

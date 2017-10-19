@@ -1,7 +1,13 @@
 .mega-menu{
-    background: #0a9ec2;
     display: none;
+    background: #0a9ec2;
+ 
+    
     h4{
         color: $white;
+    }
+    
+    .active{
+        display: block;
     }
 }

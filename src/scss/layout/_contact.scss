@@ -1,6 +1,8 @@
 .contact-info {
     background: #eee;
+    
     .contact-info__title {
+        
         h2 {
             color: $main-color;
             font-weight: 600;
@@ -8,39 +10,49 @@
         }
     }
     .contact-info__subtitle {
+
         p {
             color: #828282;
         }
     }
+
     .contact-info__list {
         padding-left: 2em;
         padding-right: 2em;
+
         @include breakpoint(medium) {
             padding-left: 5em;
             padding-right: 5em;
             padding-top: 2em;
             padding-bottom: 2em;
         }
+
         ul {
             margin-bottom: 0;
+
             li {
                 margin-bottom: 1em;
+
                 a {
                     color: #828282;
                 }
+
                 .fa {
+                    position: relative;
                     color: #027c93;
                     font-size: 30px;
-                    position: relative;
                 }
+
                 .fa-envelope {
                     top: 5px;
                     right: 15px
                 }
+
                 .fa-phone {
                     top: 0;
                     right: 15px
                 }
+
                 .fa-map-marker {
                     top: 0;
                     right: 15px
@@ -48,26 +60,34 @@
             }
         }
     }
+
     .contact-info__caption {
         padding-left: 2em;
         padding-right: 2em;
         padding-top: 0;
+
         .contact-info__caption-title {
+            margin-bottom: 0;
             color: #207c88;
             font-size: 22px;
-            margin-bottom: 0;
+           
         }
     }
+    
     .contact-info__social-list {
         padding-left: 2em;
         padding-right: 2em;
+
         ul {
+
             li {
                 display: inline;
                 padding-right: 0.5em;
+                
                 a {
                     font-size: 30px;
                 }
+
                 .fa {
                     color: #0899b8;
                 }
@@ -77,46 +97,58 @@
 }
 
 .contact-form {
+
     .contact-form__title {
         color: #565656;
+        font-size: 22px;
     }
+
     .contact-form__form {
         padding: 0;
+
         @include breakpoint(medium) {
             padding-left: 2em;
             padding-top: 2em;
             padding-right: 2em;
         }
+
         input {
-            border-color: #7d7d7d;
             padding-top: 2em;
             padding-bottom: 2em;
             padding-left: 1em;
             padding-right: 2em;
+            border-color: #7d7d7d;
+            
+
             @include placeholder {
                 color: #7d7d7d;
                 font-weight: 300;
                 font-size: 17px;
             }
         }
+
         textarea {
+            padding-left: 1em;
             resize: none;
             border-color: #7d7d7d;
-            padding-left: 1em;
+           
+
             @include placeholder {
                 color: #7d7d7d;
                 font-weight: 300;
                 font-size: 17px;
             }
         }
+
         button {
-            padding: 1em;
             display: block;
             width: 100%;
+            padding: 1em;
             font-size: 20px;
             font-weight: 600;
-            color: #FFF;
             background: #207c89;
+            color: #FFF;
+           
             cursor: pointer;
         }
     }
