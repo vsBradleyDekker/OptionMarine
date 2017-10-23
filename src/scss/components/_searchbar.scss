@@ -2,7 +2,8 @@
     text-align: center;
     background: $main-color;
     color: $white;
-   
+    position: relative;
+
     @include breakpoint(medium){
         text-align: left;
     }
@@ -26,15 +27,56 @@
         }
     }
 
-    span {
-        float: right;
-        font-size: 20px;
-
-        .fa {
-            position: relative;
-            bottom: 5px;
-        }
+    .searchbar__container {
+        position: relative;
     }
+
+    .searchbar__dropdown{
+
+        span{
+            float: right;
+            font-size: 20px;
+            color: $white;
+            display: block;
+           
+            .fa {
+                position: relative;
+                bottom: 5px;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            
+        }
+
+        &:hover{
+            
+            + .mega-menu{
+                display: block;
+            }
+        }
+    } 
+
+    .mega-menu{
+        display: none;
+        background: #0a9ec2;
+        position: absolute;
+        padding: 1em;
+        right: 0;
+        left: 0;
+        width: 100%;
+        top: 100%;
+        z-index: 1;
+
+        h4{
+            color: $white;
+        }  
+
+        &:hover{
+            display: block;
+        }
+    }  
+
 }
 
 .searchbar-secondary {

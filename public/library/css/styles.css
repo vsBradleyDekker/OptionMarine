@@ -8659,6 +8659,25 @@ a[href^="https://www.google.com/maps"] {
       padding-bottom: 0.5em;
       color: #ffffff; }
 
+.test-menu {
+  background: red; }
+  .test-menu nav li a {
+    color: #000;
+    white-space: nowrap; }
+  .test-menu nav .main-menu-child {
+    position: relative; }
+    .test-menu nav .main-menu-child .submenu {
+      display: none;
+      position: absolute;
+      width: auto; }
+    .test-menu nav .main-menu-child:hover > .submenu {
+      display: block; }
+  .test-menu nav > .main-menu-child > .submenu {
+    top: 100%; }
+  .test-menu nav > .main-menu-child > .main-menu-child:hover .submenu {
+    left: 100%;
+    top: 0; }
+
 .button {
   width: 100%;
   padding-top: 16px;
@@ -8811,7 +8830,8 @@ a[href^="https://www.google.com/maps"] {
 .searchbar {
   text-align: center;
   background: #027d8b;
-  color: #ffffff; }
+  color: #ffffff;
+  position: relative; }
   @media print, screen and (min-width: 40em) {
     .searchbar {
       text-align: left; } }
@@ -8836,12 +8856,34 @@ a[href^="https://www.google.com/maps"] {
       font-size: 23px; }
     .searchbar input:focus {
       outline: none; }
-  .searchbar span {
+  .searchbar .searchbar__container {
+    position: relative; }
+  .searchbar .searchbar__dropdown span {
     float: right;
-    font-size: 20px; }
-    .searchbar span .fa {
+    font-size: 20px;
+    color: #ffffff;
+    display: block; }
+    .searchbar .searchbar__dropdown span .fa {
       position: relative;
-      bottom: 5px; }
+      bottom: 5px;
+      padding: 10px;
+      cursor: pointer; }
+  .searchbar .searchbar__dropdown:hover + .mega-menu {
+    display: block; }
+  .searchbar .mega-menu {
+    display: none;
+    background: #0a9ec2;
+    position: absolute;
+    padding: 1em;
+    right: 0;
+    left: 0;
+    width: 100%;
+    top: 100%;
+    z-index: 1; }
+    .searchbar .mega-menu h4 {
+      color: #ffffff; }
+    .searchbar .mega-menu:hover {
+      display: block; }
 
 .searchbar-secondary {
   background: #e7e7e7; }
@@ -8881,14 +8923,6 @@ a[href^="https://www.google.com/maps"] {
         position: relative;
         bottom: 5px;
         left: 5px; } }
-
-.mega-menu {
-  display: none;
-  background: #0a9ec2; }
-  .mega-menu h4 {
-    color: #ffffff; }
-  .mega-menu .active {
-    display: block; }
 
 /*--Header Navigation Menu--*/
 .header-mast__navigation {

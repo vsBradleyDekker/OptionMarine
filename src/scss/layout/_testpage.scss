@@ -1,0 +1,49 @@
+.test-menu{
+    background: red;
+
+    nav {
+        
+        li{
+            a{
+                color: #000;
+                white-space: nowrap;
+            }
+        }
+
+        .main-menu-child{
+            position: relative;
+
+            .submenu{
+                display: none;
+                position: absolute;
+                width: auto;
+            }
+        
+            &:hover{
+
+               > .submenu{
+                    display: block;
+                }
+           
+            }
+        }
+
+        > .main-menu-child{
+    
+            > .submenu{
+                top: 100%;
+            }
+    
+            >.main-menu-child{
+    
+                &:hover{
+                    
+                    .submenu{
+                        left: 100%;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
