@@ -12,6 +12,7 @@
     &:hover {
         background: $main-color !important;
         color: $white !important;
+        @include prefix(transition, background, webkit ms o moz);
     }
 }
 

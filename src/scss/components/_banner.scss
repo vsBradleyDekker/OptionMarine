@@ -1,8 +1,9 @@
 .banner-wrapper {
+    @include center-block;
     position: relative;
     height: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  
+
 
     @include breakpoint(medium) {
         width: 86%;
@@ -68,13 +69,12 @@
         }
 
         .banner__content-button {
-            display: block;
+            @include center-block;
             width: 100%;
             background: $white;
             padding-top: 16px;
             padding-bottom: 16px;
-            margin-left: auto;
-            margin-right: auto;
+           
 
             @include breakpoint(medium) {
                 display: inline-block;

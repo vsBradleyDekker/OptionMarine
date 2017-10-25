@@ -1,9 +1,143 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);@charset "UTF-8";
 /*Website Colors*/
-/*Drop down menu Mixin*/
-/*Mixin for Form Input-placeholders*/
+/*Mixin for form input-placeholders*/
 /*Verticle-align  Mixin*/
-/*Box-shadow Mixing*/
+/*box-shadow*/
+/* Splits Elements border-radius in half forming a circle*/
+.circle:hover {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
+
+/*rotates element -30degrees on the x axis.*/
+.rotate:hover {
+  -webkit-transform: rotateZ(-30deg);
+  -moz-transform: rotateZ(-30deg);
+  -o-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg); }
+
+/*Provides element with an inset effect*/
+.inset-border:hover {
+  -webkit-box-shadow: inset 0 0 0 25px #53a7ea;
+  -moz-box-shadow: inset 0 0 0 25px #53a7ea;
+  -o-box-shadow: inset 0 0 0 25px #53a7ea;
+  -ms-box-shadow: inset 0 0 0 25px #53a7ea;
+  box-shadow: inset 0 0 0 25px #53a7ea; }
+
+/*Gives a 3D effect to element*/
+.threed:hover {
+  -webkit-box-shadow: 1px 1px #1d96b9;
+  -moz-box-shadow: 1px 1px #1d96b9;
+  -o-box-shadow: 1px 1px #1d96b9;
+  -ms-box-shadow: 1px 1px #1d96b9;
+  box-shadow: 1px 1px #1d96b9;
+  -webkit-transform: translateX(-3px);
+  -moz-transform: translateX(-3px);
+  -o-transform: translateX(-3px);
+  -ms-transform: translateX(-3px);
+  transform: translateX(-3px); }
+
+/*Allows element to have a swing effect left to right*/
+.swing {
+  /*swing is the mixin name*/ }
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    transform: translateX(5px); }
+  30% {
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px); }
+  50% {
+    -webkit-transform: translateX(3px);
+    -moz-transform: translateX(3px);
+    -o-transform: translateX(3px);
+    -ms-transform: translateX(3px);
+    transform: translateX(3px); }
+  65% {
+    -webkit-transform: translateX(-3px);
+    -moz-transform: translateX(-3px);
+    -o-transform: translateX(-3px);
+    -ms-transform: translateX(-3px);
+    transform: translateX(-3px); }
+  80% {
+    -webkit-transform: translateX(2px);
+    -moz-transform: translateX(2px);
+    -o-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    transform: translateX(2px); }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    transform: translateX(5px); }
+  30% {
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px); }
+  50% {
+    -webkit-transform: translateX(3px);
+    -moz-transform: translateX(3px);
+    -o-transform: translateX(3px);
+    -ms-transform: translateX(3px);
+    transform: translateX(3px); }
+  65% {
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  80% {
+    -webkit-transform: translateX(2px);
+    -moz-transform: translateX(2px);
+    -o-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    transform: translateX(2px); }
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); } }
+  .swing:hover {
+    -webkit-animation: swing 1s ease;
+    -moz-animation: swing 1s ease;
+    -o-animation: swing 1s ease;
+    -ms-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+  .swing .transition-bg {
+    background: #027c93;
+    -webkit-transition: background 2s ease-out;
+    -moz-transition: background 2s ease-out;
+    -o-transition: background 2s ease-out;
+    -ms-transition: background 2s ease-out;
+    transition: background 2s ease-out; }
+
 /*turns elements display to inline-block*/
 .inline-block {
   display: inline-block; }
@@ -119,6 +253,9 @@
 
 .white-background {
   background: #ffffff; }
+
+.primary-background {
+  background: #027c93; }
 
 /*Border classes*/
 .primary-border {
@@ -8133,27 +8270,18 @@ ul {
     ul li a {
       color: #ffffff;
       text-decoration: none; }
-      ul li a a:hover {
+      ul li a:hover {
         opacity: 0.8;
+        filter: alpha(opacity=80);
         color: #ffffff; }
       ul li a:visited {
         opacity: 0.8;
+        filter: alpha(opacity=80);
         color: #ffffff; }
       ul li a:focus {
         opacity: 0.8;
+        filter: alpha(opacity=80);
         color: #ffffff; }
-
-/*Gmaps Styling*/
-a[href^="http://maps.google.com/maps"],
-a[href^="https://maps.google.com/maps"],
-a[href^="https://www.google.com/maps"] {
-  display: none !important; }
-
-.gmnoprint:not(.gm-bundled-control) {
-  display: none; }
-
-.gm-bundled-control .gmnoprint {
-  display: block; }
 
 body {
   font-family: 'Ubuntu', sans-serif; }
@@ -8184,27 +8312,18 @@ ul {
     ul li a {
       color: #ffffff;
       text-decoration: none; }
-      ul li a a:hover {
+      ul li a:hover {
         opacity: 0.8;
+        filter: alpha(opacity=80);
         color: #ffffff; }
       ul li a:visited {
         opacity: 0.8;
+        filter: alpha(opacity=80);
         color: #ffffff; }
       ul li a:focus {
         opacity: 0.8;
+        filter: alpha(opacity=80);
         color: #ffffff; }
-
-/*Gmaps Styling*/
-a[href^="http://maps.google.com/maps"],
-a[href^="https://maps.google.com/maps"],
-a[href^="https://www.google.com/maps"] {
-  display: none !important; }
-
-.gmnoprint:not(.gm-bundled-control) {
-  display: none; }
-
-.gm-bundled-control .gmnoprint {
-  display: block; }
 
 .footer {
   text-align: center;
@@ -8263,7 +8382,8 @@ a[href^="https://www.google.com/maps"] {
     padding-left: 35px;
     padding-right: 35px;
     background: #027d8b;
-    color: #ffffff; }
+    color: #ffffff;
+    cursor: pointer; }
     .footer .footer__social .footer__social-newsletter .input-group-button input:focus {
       outline: none; }
     @media print, screen and (min-width: 40em) {
@@ -8661,9 +8781,13 @@ a[href^="https://www.google.com/maps"] {
 
 .test-menu {
   background: red; }
-  .test-menu nav li a {
-    color: #000;
-    white-space: nowrap; }
+  .test-menu nav li {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .test-menu nav li a {
+      color: #000;
+      white-space: nowrap; }
   .test-menu nav .main-menu-child {
     position: relative; }
     .test-menu nav .main-menu-child .submenu {
@@ -8671,12 +8795,115 @@ a[href^="https://www.google.com/maps"] {
       position: absolute;
       width: auto; }
     .test-menu nav .main-menu-child:hover > .submenu {
-      display: block; }
+      display: block;
+      right: 100%;
+      top: 0;
+      background: Red; }
   .test-menu nav > .main-menu-child > .submenu {
     top: 100%; }
   .test-menu nav > .main-menu-child > .main-menu-child:hover .submenu {
-    left: 100%;
+    right: 100%;
     top: 0; }
+
+.section-top-menu {
+  background: #027d8b; }
+  .section-top-menu .top-menu ul {
+    margin-bottom: 0; }
+    .section-top-menu .top-menu ul li {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      display: inline;
+      white-space: nowrap; }
+      .section-top-menu .top-menu ul li a {
+        padding: 0em 1em; }
+  .section-top-menu .top-menu .top-menu-children {
+    position: relative;
+    display: inline-block; }
+    .section-top-menu .top-menu .top-menu-children .top-menu-submenu {
+      display: none; }
+    .section-top-menu .top-menu .top-menu-children:hover > .top-menu-submenu {
+      display: block;
+      position: absolute;
+      background: #027d8b;
+      left: 0;
+      margin-left: 0;
+      margin-top: 15px;
+      text-align: left;
+      opacity: 0.5;
+      background: #1779ba; }
+      .section-top-menu .top-menu .top-menu-children:hover > .top-menu-submenu:hover {
+        display: block;
+        opacity: 1;
+        background: #3a3a3a;
+        -webkit-transition: background 2s ease-out;
+        -moz-transition: background 2s ease-out;
+        -o-transition: background 2s ease-out;
+        -ms-transition: background 2s ease-out;
+        transition: background 2s ease-out; }
+      .section-top-menu .top-menu .top-menu-children:hover > .top-menu-submenu li {
+        display: block;
+        white-space: nowrap; }
+        .section-top-menu .top-menu .top-menu-children:hover > .top-menu-submenu li a {
+          padding-left: 15px; }
+    .section-top-menu .top-menu .top-menu-children > .top-menu-submenu > .top-menu-children:hover .top-menu-submenu {
+      left: 100%;
+      width: 100%;
+      top: 0; }
+
+.side-menu .active {
+  display: block; }
+
+.side-menu .menu-button {
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  background: red;
+  width: 10%;
+  text-align: center; }
+  .side-menu .menu-button:hover {
+    background: #1779ba;
+    -webkit-transition: background 2s ease-out;
+    -moz-transition: background 2s ease-out;
+    -o-transition: background 2s ease-out;
+    -ms-transition: background 2s ease-out;
+    transition: background 2s ease-out;
+    color: #FFF; }
+  .side-menu .menu-button .fa-bars {
+    font-size: 22px;
+    color: #000; }
+
+.side-menu nav {
+  width: 10%;
+  background: #3a3a3a;
+  display: none; }
+  .side-menu nav li {
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .side-menu nav li a {
+      color: #000; }
+  .side-menu nav .side-menu-children {
+    position: relative; }
+    .side-menu nav .side-menu-children .side-menu-submenu {
+      position: absolute;
+      display: none;
+      background: #3a3a3a; }
+    .side-menu nav .side-menu-children:hover > .side-menu-submenu {
+      display: block;
+      margin-left: 0;
+      top: 0;
+      left: 100%;
+      width: 100%; }
+      .side-menu nav .side-menu-children:hover > .side-menu-submenu:hover {
+        color: #FFF;
+        background: #1779ba;
+        -webkit-transition: background 2s ease-out;
+        -moz-transition: background 2s ease-out;
+        -o-transition: background 2s ease-out;
+        -ms-transition: background 2s ease-out;
+        transition: background 2s ease-out; }
 
 .button {
   width: 100%;
@@ -8690,7 +8917,12 @@ a[href^="https://www.google.com/maps"] {
   cursor: pointer; }
   .button:hover {
     background: #027d8b !important;
-    color: #ffffff !important; }
+    color: #ffffff !important;
+    -webkit-transition: background;
+    -ms-transition: background;
+    -o-transition: background;
+    -moz-transition: background;
+    transition: background; }
 
 .button-sm {
   width: 100%;
@@ -8736,10 +8968,11 @@ a[href^="https://www.google.com/maps"] {
         padding-bottom: 0; } }
 
 .banner-wrapper {
-  position: relative;
-  height: 80%;
+  display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative;
+  height: 80%; }
   @media print, screen and (min-width: 40em) {
     .banner-wrapper {
       width: 86%;
@@ -8791,12 +9024,12 @@ a[href^="https://www.google.com/maps"] {
           font-size: 28px; } }
     .banner-wrapper .banner__content .banner__content-button {
       display: block;
+      margin-left: auto;
+      margin-right: auto;
       width: 100%;
       background: #ffffff;
       padding-top: 16px;
-      padding-bottom: 16px;
-      margin-left: auto;
-      margin-right: auto; }
+      padding-bottom: 16px; }
       @media print, screen and (min-width: 40em) {
         .banner-wrapper .banner__content .banner__content-button {
           display: inline-block;
@@ -8813,7 +9046,16 @@ a[href^="https://www.google.com/maps"] {
 #map {
   width: 100%;
   height: 230px;
-  background-color: grey; }
+  background-color: grey;
+  /*Gmaps Styling*/ }
+  #map a[href^="http://maps.google.com/maps"],
+  #map a[href^="https://maps.google.com/maps"],
+  #map a[href^="https://www.google.com/maps"] {
+    display: none !important; }
+  #map .gmnoprint:not(.gm-bundled-control) {
+    display: none; }
+  #map .gm-bundled-control .gmnoprint {
+    display: block; }
 
 .hero-image {
   background-image: url(../css/img/yacht3.jpg);

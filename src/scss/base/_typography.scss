@@ -23,21 +23,26 @@ p {
 
 ul {
     margin-left: 0;
+    
     li {
         list-style-type: none;
+
         a {
             color: $white;
             text-decoration: none;
-            a:hover {
-                opacity: 0.8;
+
+            &:hover {
+                @include opacity(0.8);
                 color: $white;
             }
+
             &:visited {
-                opacity: 0.8;
+                @include opacity(0.8);
                 color: $white;
             }
+
             &:focus {
-                opacity: 0.8;
+                @include opacity(0.8);
                 color: $white;
             }
         }
@@ -45,18 +50,3 @@ ul {
 }
 
 
-/*Gmaps Styling*/
-
-a[href^="http://maps.google.com/maps"],
-a[href^="https://maps.google.com/maps"],
-a[href^="https://www.google.com/maps"] {
-    display: none !important;
-}
-
-.gmnoprint:not(.gm-bundled-control) {
-    display: none;
-}
-
-.gm-bundled-control .gmnoprint {
-    display: block;
-}
