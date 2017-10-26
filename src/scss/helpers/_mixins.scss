@@ -40,6 +40,14 @@
   transform: translateY(-50%);
 }
 
+/*padding mixin*/ 
+
+@mixin padding-all($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
 
 /*box-shadow*/
 

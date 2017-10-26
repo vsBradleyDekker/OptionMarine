@@ -1,7 +1,6 @@
 .button {
     width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    @include padding-all( 16px, 0px, 16px ,0px); 
     background: $white;
     border: 3px solid $main-color;
     color: $main-color;
@@ -18,7 +17,7 @@
 
 .button-sm {
     width: 100%;
-    padding: 20px;   
+    @include padding-all( 20px, 20px, 20px ,20px); 
     margin-top: 1em;
     background: $main-color;
     font-size: 15px;
@@ -33,9 +32,10 @@
 }
 
 .button-head{
+
+    @include padding-all( 10px, 20px, 10px ,20px); 
     width: 100%;
     margin-top: 1em;
-    padding: 10px 20px;
     border: 3px solid #555555;
     background: $white;
     font-size: 15px;
@@ -45,6 +45,5 @@
     @include breakpoint(medium) {
         width: 20%;
         margin-top: 0;
-        padding: 10px 20px;
     }
 }

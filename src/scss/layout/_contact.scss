@@ -17,14 +17,12 @@
     }
 
     .contact-info__list {
-        padding-left: 2em;
-        padding-right: 2em;
-
+        @include padding-all( 0em, 2em, 0em ,2em);
+      
+        
         @include breakpoint(medium) {
-            padding-left: 5em;
-            padding-right: 5em;
-            padding-top: 2em;
-            padding-bottom: 2em;
+            @include padding-all( 2em, 5em, 2em ,5em);
+           
         }
 
         ul {
@@ -41,6 +39,7 @@
                     position: relative;
                     color: #027c93;
                     font-size: 30px;
+                    
                 }
 
                 .fa-envelope {
@@ -48,23 +47,21 @@
                     right: 15px
                 }
 
-                .fa-phone {
+                .fa-phone{
                     top: 0;
-                    right: 15px
+                    right: 15px;
                 }
 
-                .fa-map-marker {
+                .fa-map-marker{
                     top: 0;
-                    right: 15px
+                    right: 15px;
                 }
             }
         }
     }
 
     .contact-info__caption {
-        padding-left: 2em;
-        padding-right: 2em;
-        padding-top: 0;
+        @include padding-all( 0em, 2em, 0em ,2em);
 
         .contact-info__caption-title {
             margin-bottom: 0;
@@ -75,8 +72,8 @@
     }
     
     .contact-info__social-list {
-        padding-left: 2em;
-        padding-right: 2em;
+        @include padding-all( 0em, 2em, 0em ,2em);
+      
 
         ul {
 
@@ -107,16 +104,11 @@
         padding: 0;
 
         @include breakpoint(medium) {
-            padding-left: 2em;
-            padding-top: 2em;
-            padding-right: 2em;
+            @include padding-all( 2em, 2em, 0em ,2em);
         }
 
         input {
-            padding-top: 2em;
-            padding-bottom: 2em;
-            padding-left: 1em;
-            padding-right: 2em;
+            @include padding-all( 2em, 2em, 2em ,1em);
             border-color: #7d7d7d;
             
 
@@ -128,7 +120,7 @@
         }
 
         textarea {
-            padding-left: 1em;
+            @include padding-all( 2em, 0em, 0em ,1em);
             resize: none;
             border-color: #7d7d7d;
            
@@ -141,14 +133,13 @@
         }
 
         button {
+            @include padding-all( 1em, 1em, 1em ,1em);
             display: block;
             width: 100%;
-            padding: 1em;
             font-size: 20px;
             font-weight: 600;
             background: #207c89;
             color: #FFF;
-           
             cursor: pointer;
         }
     }

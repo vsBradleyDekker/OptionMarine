@@ -58,10 +58,10 @@
     } 
 
     .mega-menu{
+        @include padding-all( 1em, 1em, 1em ,1em); 
         display: none;
         background: #0a9ec2;
         position: absolute;
-        padding: 1em;
         right: 0;
         left: 0;
         width: 100%;

@@ -2,6 +2,7 @@
 /*Website Colors*/
 /*Mixin for form input-placeholders*/
 /*Verticle-align  Mixin*/
+/*padding mixin*/
 /*box-shadow*/
 /* Splits Elements border-radius in half forming a circle*/
 .circle:hover {
@@ -194,8 +195,9 @@
 
 .pad-ltr-small {
   padding-top: 2em;
-  padding-left: 2em;
-  padding-right: 2em; }
+  padding-right: 2em;
+  padding-bottom: 0em;
+  padding-left: 2em; }
 
 .no-pad {
   padding: 0 !important; }
@@ -234,14 +236,14 @@
 /*buttons*/
 /*note: made for a element*/
 .cta-button {
+  padding-top: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0em;
   background: transparent;
   color: #555555;
   border: 3px solid #555555;
   font-size: 18px;
-  padding-top: 0.5em;
-  padding-left: 0;
-  padding-right: 0.5em;
-  padding-bottom: 0.5em;
   font-weight: 600; }
   .cta-button:hover {
     color: #555555;
@@ -8345,7 +8347,12 @@ ul {
   .footer .footer__social .footer__social-info span {
     display: block;
     color: #ffffff;
-    font-size: 15px; }
+    font-size: 15px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
     .footer .footer__social .footer__social-info span a {
       color: #ffffff; }
       .footer .footer__social .footer__social-info span a a:hover {
@@ -8356,8 +8363,9 @@ ul {
     color: #027c93; }
   .footer .footer__social .footer__social-newsletter .input-group-field {
     padding-top: 1em;
+    padding-right: 0em;
     padding-bottom: 1em;
-    padding-left: 0.5em;
+    padding-left: 1em;
     border: 3px solid #FFF;
     background: transparent;
     color: #ffffff; }
@@ -8374,13 +8382,16 @@ ul {
     @media print, screen and (min-width: 40em) {
       .footer .footer__social .footer__social-newsletter .input-group-field {
         padding-top: 15px;
+        padding-right: 0px;
         padding-bottom: 15px;
         padding-left: 15px; } }
   .footer .footer__social .footer__social-newsletter .input-group-button input {
+    padding-top: 0px;
+    padding-right: 35px;
+    padding-bottom: 0px;
+    padding-left: 35px;
     display: block;
     border: none;
-    padding-left: 35px;
-    padding-right: 35px;
     background: #027d8b;
     color: #ffffff;
     cursor: pointer; }
@@ -8430,6 +8441,10 @@ ul {
       color: #0899b8; }
       @media print, screen and (min-width: 40em) {
         .footer-secondary .footer-secondary__social-list .fa {
+          padding-top: 16px;
+          padding-right: 0px;
+          padding-bottom: 0px;
+          padding-left: 16px;
           padding-top: 16px;
           padding-left: 16px;
           padding-right: 0; } }
@@ -8500,14 +8515,16 @@ ul {
   .contact-info .contact-info__subtitle p {
     color: #828282; }
   .contact-info .contact-info__list {
-    padding-left: 2em;
-    padding-right: 2em; }
+    padding-top: 0em;
+    padding-right: 2em;
+    padding-bottom: 0em;
+    padding-left: 2em; }
     @media print, screen and (min-width: 40em) {
       .contact-info .contact-info__list {
-        padding-left: 5em;
-        padding-right: 5em;
         padding-top: 2em;
-        padding-bottom: 2em; } }
+        padding-right: 5em;
+        padding-bottom: 2em;
+        padding-left: 5em; } }
     .contact-info .contact-info__list ul {
       margin-bottom: 0; }
       .contact-info .contact-info__list ul li {
@@ -8528,16 +8545,19 @@ ul {
           top: 0;
           right: 15px; }
   .contact-info .contact-info__caption {
-    padding-left: 2em;
+    padding-top: 0em;
     padding-right: 2em;
-    padding-top: 0; }
+    padding-bottom: 0em;
+    padding-left: 2em; }
     .contact-info .contact-info__caption .contact-info__caption-title {
       margin-bottom: 0;
       color: #207c88;
       font-size: 22px; }
   .contact-info .contact-info__social-list {
-    padding-left: 2em;
-    padding-right: 2em; }
+    padding-top: 0em;
+    padding-right: 2em;
+    padding-bottom: 0em;
+    padding-left: 2em; }
     .contact-info .contact-info__social-list ul li {
       display: inline;
       padding-right: 0.5em; }
@@ -8554,14 +8574,15 @@ ul {
   padding: 0; }
   @media print, screen and (min-width: 40em) {
     .contact-form .contact-form__form {
-      padding-left: 2em;
       padding-top: 2em;
-      padding-right: 2em; } }
+      padding-right: 2em;
+      padding-bottom: 0em;
+      padding-left: 2em; } }
   .contact-form .contact-form__form input {
     padding-top: 2em;
+    padding-right: 2em;
     padding-bottom: 2em;
     padding-left: 1em;
-    padding-right: 2em;
     border-color: #7d7d7d; }
     .contact-form .contact-form__form input::-webkit-input-placeholder {
       color: #7d7d7d;
@@ -8580,6 +8601,9 @@ ul {
       font-weight: 300;
       font-size: 17px; }
   .contact-form .contact-form__form textarea {
+    padding-top: 2em;
+    padding-right: 0em;
+    padding-bottom: 0em;
     padding-left: 1em;
     resize: none;
     border-color: #7d7d7d; }
@@ -8600,9 +8624,12 @@ ul {
       font-weight: 300;
       font-size: 17px; }
   .contact-form .contact-form__form button {
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
     display: block;
     width: 100%;
-    padding: 1em;
     font-size: 20px;
     font-weight: 600;
     background: #207c89;
@@ -8611,11 +8638,17 @@ ul {
 
 .header-mast {
   padding-top: 1em;
-  padding-bottom: 1em; }
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-right: 0em;
+  padding-bottom: 1em;
+  padding-left: 0em; }
   @media print, screen and (min-width: 40em) {
     .header-mast {
-      padding-top: 0;
-      padding-bottom: 0; } }
+      padding-top: 0em;
+      padding-right: 0em;
+      padding-bottom: 0em;
+      padding-left: 0em; } }
   .header-mast .header-mast__logo-holder .header-mast__logo-holder__logo {
     width: 55%;
     padding-bottom: 1em; }
@@ -8633,6 +8666,7 @@ ul {
       background-color: #027d8b; }
       .header-mast .nav .menu-item-has-children .sub-menu li {
         padding-top: 5px;
+        padding-right: 0px;
         padding-bottom: 5px;
         padding-left: 5px; }
         .header-mast .nav .menu-item-has-children .sub-menu li a {
@@ -8660,6 +8694,7 @@ ul {
     background-color: #027d8b; }
     .header-secondary .nav .menu-item-has-children .sub-menu li {
       padding-top: 5px;
+      padding-right: 0px;
       padding-bottom: 5px;
       padding-left: 5px; }
       .header-secondary .nav .menu-item-has-children .sub-menu li a {
@@ -8764,6 +8799,10 @@ ul {
       border-right: 1px solid #ffffff;
       border-left: 1px solid #ffffff;
       padding-top: 0.5em;
+      padding-right: 0em;
+      padding-bottom: 0.5em;
+      padding-left: 0em;
+      padding-top: 0.5em;
       padding-bottom: 0.5em;
       text-align: center;
       font-size: 18px;
@@ -8773,10 +8812,12 @@ ul {
           border-left: 0;
           text-align: left; } }
     .product_category .product-category__list a {
+      padding-top: 0.5em;
+      padding-right: 0em;
+      padding-bottom: 0.5em;
+      padding-left: 0em;
       display: block;
       border-top: 1px solid #ffffff;
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
       color: #ffffff; }
 
 .test-menu {
@@ -8908,7 +8949,9 @@ ul {
 .button {
   width: 100%;
   padding-top: 16px;
+  padding-right: 0px;
   padding-bottom: 16px;
+  padding-left: 0px;
   background: #ffffff;
   border: 3px solid #027d8b;
   color: #027d8b;
@@ -8926,7 +8969,10 @@ ul {
 
 .button-sm {
   width: 100%;
-  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
   margin-top: 1em;
   background: #027d8b;
   font-size: 15px;
@@ -8939,9 +8985,12 @@ ul {
       padding: 16px; } }
 
 .button-head {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   width: 100%;
   margin-top: 1em;
-  padding: 10px 20px;
   border: 3px solid #555555;
   background: #ffffff;
   font-size: 15px;
@@ -8950,8 +8999,7 @@ ul {
   @media print, screen and (min-width: 40em) {
     .button-head {
       width: 20%;
-      margin-top: 0;
-      padding: 10px 20px; } }
+      margin-top: 0; } }
 
 .affilaites {
   text-align: center;
@@ -8982,7 +9030,10 @@ ul {
       margin-top: 10em;
       height: 55%;
       width: 35%;
-      padding: 14em; } }
+      padding-top: 14em;
+      padding-right: 14em;
+      padding-bottom: 14em;
+      padding-left: 14em; } }
   .banner-wrapper .banner__background {
     position: absolute;
     background: rgba(23, 136, 151, 0.9);
@@ -9028,6 +9079,10 @@ ul {
       margin-right: auto;
       width: 100%;
       background: #ffffff;
+      padding-top: 16px;
+      padding-right: 0px;
+      padding-bottom: 16px;
+      padding-left: 0px;
       padding-top: 16px;
       padding-bottom: 16px; }
       @media print, screen and (min-width: 40em) {
@@ -9113,10 +9168,13 @@ ul {
   .searchbar .searchbar__dropdown:hover + .mega-menu {
     display: block; }
   .searchbar .mega-menu {
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
     display: none;
     background: #0a9ec2;
     position: absolute;
-    padding: 1em;
     right: 0;
     left: 0;
     width: 100%;
@@ -9173,12 +9231,15 @@ ul {
     width: 100%;
     background: transparent; }
     .header-mast__navigation nav .toggle {
+      padding-top: 5px;
+      padding-right: 17px;
+      padding-bottom: 5px;
+      padding-left: 17px;
       display: block;
       float: right;
       position: relative;
       right: 20px;
       bottom: 55px;
-      padding: 5px 17px;
       box-sizing: border-box;
       text-align: right;
       background: #178897;
@@ -9193,11 +9254,14 @@ ul {
     .header-mast__navigation nav .active {
       display: block; }
     .header-mast__navigation nav ul {
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
       width: 100%;
       display: none;
       float: right;
       margin-top: 15px;
-      padding: 0;
       background: #178897; }
       @media print, screen and (min-width: 40em) {
         .header-mast__navigation nav ul {
@@ -9205,10 +9269,11 @@ ul {
           display: block;
           background: transparent; } }
       .header-mast__navigation nav ul li {
-        display: block;
         padding-top: 1em;
+        padding-right: 2em;
         padding-bottom: 1em;
-        padding-right: 32px;
+        padding-left: 0em;
+        display: block;
         border-bottom: 1px solid #ffffff;
         list-style-type: none;
         text-align: left; }
@@ -9229,7 +9294,11 @@ ul {
             .header-mast__navigation nav ul li a {
               color: #555555; } }
           .header-mast__navigation nav ul li a .fa {
-            padding: 0.5em; }
+            padding: 0.5em;
+            padding-top: 0.5em;
+            padding-right: 0.5em;
+            padding-bottom: 0.5em;
+            padding-left: 0.5em; }
 
 /*footer Navigation Menu*/
 .footer__navigation ul span {

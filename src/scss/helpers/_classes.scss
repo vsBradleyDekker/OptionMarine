@@ -70,9 +70,8 @@
 }
 
 .pad-ltr-small {
-  padding-top: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
+   @include padding-all( 2em, 2em, 0em ,2em); 
+
 }
 
 .no-pad {
@@ -124,14 +123,11 @@
 
 /*note: made for a element*/
 .cta-button{
+  @include padding-all( 0.5em, 0.5em, 0.5em ,0em); 
   background: transparent;
   color: #555555;
   border: 3px solid #555555;
-  font-size: 18px;
-  padding-top: 0.5em;
-  padding-left: 0;
-  padding-right: 0.5em;
-  padding-bottom: 0.5em;
+  font-size: 18px;  
   font-weight: 600;
   
   &:hover{
