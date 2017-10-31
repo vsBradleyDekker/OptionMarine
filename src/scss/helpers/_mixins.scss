@@ -49,6 +49,23 @@
   padding-left: $left;
 }
 
+@mixin position-center($position: absolute){
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*margin mixin*/
+
+@mixin margin-all($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
 /*box-shadow*/
 
 @mixin box-shadow( $horiz: 1px, $vert: 1px, $blur: 1px, $spread: -1px, $color: rgba(0, 0, 0, 0.75)) {

@@ -3,6 +3,7 @@
 /*Mixin for form input-placeholders*/
 /*Verticle-align  Mixin*/
 /*padding mixin*/
+/*margin mixin*/
 /*box-shadow*/
 /* Splits Elements border-radius in half forming a circle*/
 .circle:hover {
@@ -8477,16 +8478,22 @@ ul {
       opacity: 0.9;
       background: #027d8b; }
       .products-section .products-section__listing .wrapper .hover .border {
-        margin: 18px;
+        padding-top: 18px;
+        padding-right: 18px;
+        padding-bottom: 18px;
+        padding-left: 18px;
         border: 2px solid #fff; }
       .products-section .products-section__listing .wrapper .hover span {
         font-weight: bold;
         font-size: 18px;
         color: #ffffff; }
       .products-section .products-section__listing .wrapper .hover a {
+        padding-top: 10px;
+        padding-right: 55px;
+        padding-bottom: 10px;
+        padding-left: 55px;
         display: inline-block;
         border: 2px solid #ffffff;
-        padding: 10px 55px;
         background: #027d8b;
         color: #ffffff;
         cursor: pointer; }
@@ -8497,8 +8504,11 @@ ul {
     width: 100%;
     z-index: 300; }
   .products-section .products-section__listing .products-section__listing__genre {
+    padding-top: 16px;
+    padding-right: 10px;
+    padding-bottom: 16px;
+    padding-left: 10px;
     display: block;
-    padding: 16px 10px;
     background: #027d8b;
     font-size: 18px;
     color: #ffffff; }

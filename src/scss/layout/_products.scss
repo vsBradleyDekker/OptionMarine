@@ -28,7 +28,7 @@
                 background: $main-color;
 
                 .border {
-                    margin: 18px;
+                    @include margin-all( 18px, 18px, 18px,18px);
                     border: 2px solid $border-secondary;
                 }
 
@@ -39,9 +39,9 @@
                 }
 
                 a {
+                    @include padding-all( 10px, 55px, 10px, 55px);
                     display: inline-block;
                     border: 2px solid $white;
-                    padding: 10px 55px;
                     background: $main-color;
                     color: $white;
                     cursor: pointer;
@@ -63,8 +63,9 @@
         }
 
         .products-section__listing__genre {
+
+            @include padding-all( 16px, 10px, 16px, 10px);
             display: block;
-            padding: 16px 10px;
             background: $main-color;
             font-size: 18px;
             color: $white;
