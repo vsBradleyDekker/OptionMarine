@@ -39,7 +39,7 @@
                                 <a href="../pages/contact.php">Contact Us</a>
                             </li>
                             <a class="cta-button hide-for-small-only" href="../pages/contact.php">
-                                <i class="fa fa-phone pad-all-xs"></i>(03) 9763 3166</a>
+                            <i class="fa fa-phone pad-all-xs"></i>(03) 9763 3166</a>
                         </ul>
                     </nav>
                 </div>

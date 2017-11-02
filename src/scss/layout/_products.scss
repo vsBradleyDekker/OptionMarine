@@ -28,8 +28,9 @@
                 background: $main-color;
 
                 .border {
-                    @include margin-all( 18px, 18px, 18px,18px);
+                    margin: 1em;
                     border: 2px solid $border-secondary;
+                    padding-top: 0;
                 }
 
                 span {

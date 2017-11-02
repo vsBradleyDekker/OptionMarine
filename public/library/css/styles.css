@@ -8478,11 +8478,9 @@ ul {
       opacity: 0.9;
       background: #027d8b; }
       .products-section .products-section__listing .wrapper .hover .border {
-        padding-top: 18px;
-        padding-right: 18px;
-        padding-bottom: 18px;
-        padding-left: 18px;
-        border: 2px solid #fff; }
+        margin: 1em;
+        border: 2px solid #fff;
+        padding-top: 0; }
       .products-section .products-section__listing .wrapper .hover span {
         font-weight: bold;
         font-size: 18px;
@@ -9044,6 +9042,12 @@ ul {
       padding-right: 14em;
       padding-bottom: 14em;
       padding-left: 14em; } }
+  @media screen and (min-width: 64em) {
+    .banner-wrapper {
+      width: 80%; } }
+  @media screen and (min-width: 75em) {
+    .banner-wrapper {
+      width: 55%; } }
   .banner-wrapper .banner__background {
     position: absolute;
     background: rgba(23, 136, 151, 0.9);
@@ -9282,17 +9286,19 @@ ul {
         padding-top: 1em;
         padding-right: 2em;
         padding-bottom: 1em;
-        padding-left: 0em;
+        padding-left: 2em;
         display: block;
         border-bottom: 1px solid #ffffff;
         list-style-type: none;
-        text-align: left; }
+        text-align: left;
+        padding-left: 2em; }
         @media print, screen and (min-width: 40em) {
           .header-mast__navigation nav ul li {
             display: inline-block;
             border-bottom: none;
             padding-top: 0;
-            padding-bottom: 0; } }
+            padding-bottom: 0;
+            padding-left: 0; } }
         .header-mast__navigation nav ul li:hover {
           opacity: 0.8; }
         .header-mast__navigation nav ul li a {

@@ -47,18 +47,22 @@
             }
 
             li {
-                @include padding-all( 1em, 2em, 1em ,0em); 
+                @include padding-all( 1em, 2em, 1em ,2em); 
                 display: block;
                 border-bottom: 1px solid $white;                
                 list-style-type: none;
                 text-align: left;
                
+                @include breakpoint(small){
+                    padding-left: 2em;
+                }
                
                 @include breakpoint(medium) {
                     display: inline-block;
                     border-bottom: none;
                     padding-top: 0;
                     padding-bottom: 0;
+                    padding-left: 0;
                 }
 
                 &:hover {

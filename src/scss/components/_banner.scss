@@ -14,7 +14,12 @@
         width: 35%;
         @include padding-all( 14em, 14em, 14em ,14em);
     }
-
+    @media screen and #{breakpoint(large)} {
+        width: 80%;
+    }
+    @media screen and #{breakpoint(xlarge)} {
+        width: 55%;
+    }
     .banner__background {
         position: absolute;
         background: rgba(23, 136, 151, 0.9);
